@@ -1,0 +1,1110 @@
+/* Estilos personalizados para Detalles Beli's */
+
+/* Floral Pattern Background */
+.floral-pattern {
+    background-color: #FFF9F9;
+    background-image: radial-gradient(#F7A1C4 0.5px, transparent 0.5px), radial-gradient(#F7A1C4 0.5px, #FFF9F9 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0, 10px 10px;
+    opacity: 0.1;
+}
+
+.dark .floral-pattern {
+    background-color: #19161c;
+    background-image: radial-gradient(#7a5c9d 0.5px, transparent 0.5px), radial-gradient(#7a5c9d 0.5px, #19161c 0.5px);
+    opacity: 0.05;
+}
+
+/* Arch Top para cards de catálogo */
+.arched-top {
+    border-radius: 160px 160px 1rem 1rem;
+}
+
+/* Soft Shadow */
+.soft-shadow {
+    box-shadow: 0 10px 30px -10px rgba(109, 76, 146, 0.15);
+}
+
+/* Speech Bubble Tail */
+.speech-bubble-tail {
+    position: relative;
+}
+
+.speech-bubble-tail::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 30px;
+    border-width: 15px 15px 0 0;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}
+
+.dark .speech-bubble-tail::after {
+    border-color: #1E1B24 transparent transparent transparent;
+}
+
+/* Animaciones */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Clases de animación */
+.animate-fade-in-up {
+    animation: fadeInUp 0.6s ease-out forwards;
+}
+
+.animate-float {
+    animation: float 3s ease-in-out infinite;
+}
+
+.animate-pulse-slow {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* Efectos hover para cards */
+.catalog-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.catalog-card:hover {
+    border-color: #F7A1C4;
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(122, 92, 157, 0.15);
+}
+
+.catalog-card:hover .catalog-link {
+    color: #F7A1C4;
+    transform: translateX(5px);
+}
+
+.catalog-link {
+    transition: all 0.3s ease;
+}
+
+/* Efectos para testimonios */
+.testimonial-card {
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Smooth scroll behavior */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Estilos para el header fijo */
+header {
+    transition: all 0.3s ease;
+}
+
+header.scrolled {
+    background-color: rgba(255, 249, 249, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.dark header.scrolled {
+    background-color: rgba(25, 22, 28, 0.95);
+}
+
+/* Estilos para iconos sociales */
+.social-icon {
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: translateY(-3px);
+}
+
+/* Estilos para botones */
+.whatsapp-btn {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.whatsapp-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(122, 92, 157, 0.3);
+}
+
+.scroll-btn {
+    transition: all 0.3s ease;
+}
+
+.scroll-btn:hover {
+    border-color: #7a5c9d;
+    background-color: rgba(122, 92, 157, 0.05);
+}
+
+/* Estilos para el botón de volver arriba - SOLO VISIBLE EN PC Y TABLET */
+#back-to-top {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 999;
+    width: 3.5rem !important;
+    height: 3.5rem !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#back-to-top .material-symbols-outlined {
+    font-size: 1.75rem !important;
+}
+
+#back-to-top.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+#back-to-top:hover {
+    transform: scale(1.1) translateY(-3px);
+}
+
+/* Ocultar back to top en móviles */
+@media (max-width: 768px) {
+    #back-to-top {
+        display: none !important;
+    }
+}
+
+/* Tablets en landscape - mostrar botón */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #back-to-top {
+        display: flex !important;
+        bottom: 1.5rem !important;
+        left: 1.5rem !important;
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+}
+
+/* Estilos para el menú móvil */
+#mobile-menu {
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Estilos para el formulario */
+input:focus, 
+textarea:focus, 
+select:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(122, 92, 157, 0.1);
+}
+
+/* Gradientes personalizados */
+.gradient-primary {
+    background: linear-gradient(135deg, #7a5c9d 0%, #F7A1C4 100%);
+}
+
+.gradient-light {
+    background: linear-gradient(135deg, #FFF9F9 0%, #FFFFFF 100%);
+}
+
+.dark .gradient-light {
+    background: linear-gradient(135deg, #19161c 0%, #252233 100%);
+}
+
+/* Estilos para imágenes con hover */
+.hover-zoom {
+    transition: transform 0.5s ease;
+}
+
+.hover-zoom:hover {
+    transform: scale(1.05);
+}
+
+/* Efecto de brillo para elementos destacados */
+.glow {
+    box-shadow: 0 0 20px rgba(247, 161, 196, 0.3);
+}
+
+.dark .glow {
+    box-shadow: 0 0 20px rgba(122, 92, 157, 0.3);
+}
+
+/* ============= RESPONSIVE CORRECTIONS ============= */
+
+/* Ajustes generales para móvil */
+@media (max-width: 640px) {
+    .max-w-\[1200px\] {
+        padding-left: 1.5rem !important;
+        padding-right: 1.5rem !important;
+    }
+    
+    .py-20, 
+    .py-24 {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    .pt-12 {
+        padding-top: 2rem !important;
+    }
+    
+    .pb-20 {
+        padding-bottom: 2.5rem !important;
+    }
+    
+    .flex-col.sm\:flex-row {
+        width: 100%;
+        gap: 1rem !important;
+    }
+    
+    .flex-col.sm\:flex-row a,
+    .flex-col.sm\:flex-row button {
+        width: 100%;
+        justify-content: center;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    button, 
+    a:not(.social-icon):not(.whatsapp-float a),
+    .occasion-card,
+    .scroll-btn {
+        min-height: 44px;
+        min-width: 44px;
+    }
+    
+    select,
+    textarea,
+    input {
+        font-size: 16px !important;
+    }
+}
+
+/* ===== SECCIÓN PERSONALIZACIÓN ===== */
+@media (max-width: 1024px) {
+    #personalizacion .grid {
+        gap: 2.5rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #personalizacion .grid {
+        gap: 2rem !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #personalizacion {
+        padding-top: 2rem !important;
+        padding-bottom: 2.5rem !important;
+    }
+    
+    #personalizacion .grid {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 2rem !important;
+    }
+    
+    #personalizacion .relative.group {
+        margin-top: 1.5rem;
+        max-width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    #personalizacion .aspect-\[4\/5\] {
+        aspect-ratio: 3/4;
+    }
+    
+    #personalizacion .grid.sm\:grid-cols-2 {
+        grid-template-columns: 1fr !important;
+        gap: 1rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #personalizacion .flex.gap-4 {
+        padding: 1rem;
+        background: rgba(122, 92, 157, 0.03);
+        border-radius: 1rem;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .dark #personalizacion .flex.gap-4 {
+        background: rgba(122, 92, 157, 0.08);
+    }
+}
+
+/* ===== SECCIÓN PROCESO DE CREACIÓN ===== */
+@media (max-width: 768px) {
+    #proceso-creacion {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    #proceso-creacion .grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+    }
+    
+    #proceso-creacion h3 {
+        font-size: 2rem !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        margin-bottom: 2rem !important;
+    }
+    
+    #proceso-creacion .space-y-4 {
+        padding: 1.5rem;
+        background: rgba(122, 92, 157, 0.02);
+        border-radius: 1.5rem;
+        border: 1px solid rgba(122, 92, 157, 0.1);
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    
+    .dark #proceso-creacion .space-y-4 {
+        background: rgba(122, 92, 157, 0.05);
+        border-color: rgba(122, 92, 157, 0.15);
+    }
+}
+
+/* ===== SECCIÓN PROCESO ===== */
+#proceso-creacion .mt-12 {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 1rem !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    max-width: 450px !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
+#proceso-creacion .mt-12 a {
+    margin: 0 !important;
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+    padding-top: 0.65rem !important;
+    padding-bottom: 0.65rem !important;
+    min-width: 140px !important;
+    white-space: nowrap !important;
+    font-size: 0.9rem !important;
+    width: auto !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+@media (max-width: 640px) {
+    #proceso-creacion .mt-12 {
+        gap: 0.75rem !important;
+        max-width: 100% !important;
+    }
+    
+    #proceso-creacion .mt-12 a {
+        width: calc(50% - 0.5rem) !important;
+        min-width: unset !important;
+        padding-left: 0.5rem !important;
+        padding-right: 0.5rem !important;
+        white-space: nowrap !important;
+        font-size: 0.8rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #proceso-creacion .mt-12 a {
+        width: 100% !important;
+        white-space: nowrap !important;
+        font-size: 0.85rem !important;
+        padding-left: 0.75rem !important;
+        padding-right: 0.75rem !important;
+    }
+}
+
+/* ===== SECCIÓN OCASIONES ESPECIALES ===== */
+#ocasiones .occasion-card {
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    text-align: center !important;
+    height: auto !important;
+    min-height: 260px !important;
+}
+
+#ocasiones .occasion-card:hover {
+    transform: translateY(-5px);
+}
+
+#ocasiones .occasion-card:hover .material-symbols-outlined {
+    transform: scale(1.1);
+}
+
+#ocasiones .occasion-card .material-symbols-outlined {
+    transition: transform 0.3s ease;
+}
+
+#ocasiones .occasion-card p {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Header de la sección */
+#ocasiones .text-center.mb-16 h2 {
+    font-size: 2.5rem !important;
+    line-height: 1.2 !important;
+}
+
+#ocasiones .text-center.mb-16 p {
+    font-size: 1.125rem !important;
+    line-height: 1.6 !important;
+    max-width: 600px !important;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+@media (max-width: 768px) {
+    #ocasiones {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    #ocasiones .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 1.25rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #ocasiones .occasion-card {
+        padding: 1.75rem 1rem !important;
+        margin: 0 !important;
+        min-height: 240px !important;
+    }
+    
+    #ocasiones .occasion-card > div:first-child {
+        width: 4rem !important;
+        height: 4rem !important;
+        margin-bottom: 1.25rem !important;
+        margin-right: 0 !important;
+    }
+    
+    #ocasiones .w-16.h-16 .material-symbols-outlined {
+        font-size: 2rem !important;
+    }
+    
+    #ocasiones h3 {
+        font-size: 1.25rem !important;
+        margin-bottom: 0.75rem !important;
+        width: 100% !important;
+        font-weight: 700 !important;
+    }
+    
+    #ocasiones p {
+        font-size: 0.95rem !important;
+        width: 100% !important;
+        margin-bottom: 0 !important;
+        line-height: 1.5 !important;
+        padding: 0 0.25rem !important;
+    }
+    
+    #ocasiones .mt-6 {
+        margin-top: 1.25rem !important;
+        margin-left: 0 !important;
+        width: 100% !important;
+        display: flex !important;
+        justify-content: center !important;
+    }
+    
+    #ocasiones .text-center.mb-16 h2 {
+        font-size: 2.25rem !important;
+    }
+    
+    #ocasiones .text-center.mb-16 p {
+        font-size: 1rem !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+}
+
+@media (max-width: 640px) and (min-width: 481px) {
+    #ocasiones .grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #ocasiones .grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.25rem !important;
+    }
+    
+    #ocasiones .occasion-card {
+        padding: 1.75rem 1.25rem !important;
+        width: 100% !important;
+        max-width: 320px !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        min-height: 220px !important;
+    }
+    
+    #ocasiones .text-center.mb-16 h2 {
+        font-size: 2rem !important;
+    }
+    
+    #ocasiones .text-center.mb-16 p {
+        font-size: 1rem !important;
+    }
+}
+
+/* ===== SECCIÓN OCASIONES ===== */
+#ocasiones .bg-gradient-to-r {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    text-align: left !important;
+    padding: 2.5rem !important;
+    position: relative !important;
+    overflow: hidden !important;
+}
+
+#ocasiones .bg-gradient-to-r .relative.z-10 {
+    max-width: 550px !important;
+}
+
+#ocasiones .bg-gradient-to-r h2 {
+    font-size: 2.2rem !important;
+    margin-bottom: 1rem !important;
+    line-height: 1.2 !important;
+}
+
+#ocasiones .bg-gradient-to-r p {
+    font-size: 1.1rem !important;
+    margin-bottom: 1.5rem !important;
+    line-height: 1.5 !important;
+    color: rgba(255, 255, 255, 0.95) !important;
+}
+
+#ocasiones .whatsapp-btn {
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 0.9rem !important;
+    padding-bottom: 0.9rem !important;
+    width: auto !important;
+    min-width: 240px !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    margin-top: 0.5rem !important;
+    border-radius: 9999px !important;
+}
+
+@media (max-width: 768px) {
+    #ocasiones .bg-gradient-to-r {
+        padding: 2rem !important;
+        align-items: center !important;
+        text-align: center !important;
+    }
+    
+    #ocasiones .bg-gradient-to-r h2 {
+        font-size: 1.8rem !important;
+    }
+    
+    #ocasiones .bg-gradient-to-r p {
+        font-size: 1rem !important;
+    }
+    
+    #ocasiones .whatsapp-btn {
+        white-space: normal !important;
+        min-width: unset !important;
+        width: 100% !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+        font-size: 0.95rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #ocasiones .bg-gradient-to-r {
+        padding: 1.75rem 1.25rem !important;
+    }
+    
+    #ocasiones .bg-gradient-to-r h2 {
+        font-size: 1.5rem !important;
+    }
+}
+
+/* ===== SECCIÓN TESTIMONIOS ===== */
+@media (max-width: 768px) {
+    #testimonios {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+    
+    #testimonios .grid {
+        grid-template-columns: 1fr !important;
+        gap: 1.5rem !important;
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+    
+    #testimonios .testimonial-card {
+        max-width: 100%;
+    }
+    
+    #testimonios .p-8 {
+        padding: 1.5rem !important;
+    }
+    
+    #testimonios .speech-bubble-tail {
+        margin-bottom: 1rem !important;
+    }
+    
+    #testimonios .speech-bubble-tail::after {
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+}
+
+@media (max-width: 640px) {
+    #testimonios h2 {
+        font-size: 2rem !important;
+        margin-bottom: 0.75rem !important;
+    }
+    
+    #testimonios .mt-20 {
+        margin-top: 2.5rem !important;
+    }
+    
+    #testimonios .rounded-3xl {
+        padding: 2rem 1.5rem !important;
+    }
+    
+    #testimonios .font-cursive.text-5xl {
+        font-size: 2.25rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* ===== SECCIÓN CONTACTO ===== */
+@media (max-width: 1024px) {
+    #contacto .grid {
+        gap: 3rem !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #contacto {
+        padding-top: 3rem !important;
+        padding-bottom: 4rem !important;
+    }
+    
+    #contacto .grid {
+        grid-template-columns: 1fr !important;
+        gap: 2rem !important;
+    }
+}
+
+@media (max-width: 640px) {
+    #contacto .rounded-2xl.p-8 {
+        padding: 1.5rem !important;
+    }
+    
+    #contacto .flex.gap-3 {
+        flex-wrap: wrap;
+        gap: 0.75rem !important;
+    }
+    
+    #contacto .social-icon {
+        width: 2.75rem !important;
+        height: 2.75rem !important;
+        min-width: 44px;
+        min-height: 44px;
+    }
+}
+
+/* ===== SECCIÓN CONTACTO ===== */
+#contacto .bg-gradient-to-r {
+    padding: 2rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+}
+
+#contacto .bg-gradient-to-r .flex.items-start {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 1rem !important;
+    margin-bottom: 0.5rem !important;
+}
+
+#contacto .bg-gradient-to-r h3 {
+    font-size: 1.5rem !important;
+    margin-bottom: 0.25rem !important;
+}
+
+#contacto .bg-gradient-to-r p {
+    margin-bottom: 0.25rem !important;
+    line-height: 1.5 !important;
+}
+
+#contacto .whatsapp-btn {
+    white-space: nowrap !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    padding-left: 2rem !important;
+    padding-right: 2rem !important;
+    padding-top: 0.9rem !important;
+    padding-bottom: 0.9rem !important;
+    width: auto !important;
+    min-width: 260px !important;
+    font-size: 1.05rem !important;
+    font-weight: 600 !important;
+    margin-top: 0.5rem !important;
+    margin-bottom: 0.75rem !important;
+    border-radius: 9999px !important;
+}
+
+#contacto .bg-gradient-to-r .space-y-2 {
+    margin-top: 0.75rem !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0.6rem !important;
+}
+
+#contacto .bg-gradient-to-r .space-y-2 a {
+    white-space: nowrap !important;
+    display: inline-block !important;
+    width: auto !important;
+    min-width: 200px !important;
+    align-self: flex-start !important;
+    text-align: left !important;
+    padding: 0.7rem 1.25rem !important;
+    font-size: 0.95rem !important;
+    border-radius: 9999px !important;
+    background-color: rgba(255, 255, 255, 0.12) !important;
+    transition: all 0.3s ease !important;
+}
+
+#contacto .bg-gradient-to-r .space-y-2 a:hover {
+    background-color: rgba(255, 255, 255, 0.2) !important;
+    transform: translateX(5px) !important;
+}
+
+#contacto .bg-gradient-to-r .pt-4.border-t {
+    margin-top: 1.25rem !important;
+    padding-top: 1.25rem !important;
+}
+
+@media (max-width: 768px) {
+    #contacto .bg-gradient-to-r {
+        padding: 1.75rem !important;
+    }
+    
+    #contacto .whatsapp-btn {
+        white-space: normal !important;
+        min-width: unset !important;
+        width: 100% !important;
+        padding-left: 1rem !important;
+        padding-right: 1rem !important;
+    }
+    
+    #contacto .bg-gradient-to-r .space-y-2 a {
+        white-space: normal !important;
+        width: 100% !important;
+        min-width: unset !important;
+        text-align: center !important;
+        padding: 0.7rem 0.75rem !important;
+    }
+    
+    #contacto .bg-gradient-to-r .space-y-2 a:hover {
+        transform: translateY(-2px) !important;
+    }
+}
+
+@media (max-width: 480px) {
+    #contacto .bg-gradient-to-r {
+        padding: 1.5rem !important;
+    }
+    
+    #contacto .bg-gradient-to-r h3 {
+        font-size: 1.35rem !important;
+    }
+}
+
+
+
+/* ===== BOTÓN WHATSAPP FLOTANTE ===== */
+.whatsapp-float {
+    z-index: 1000;
+    transition: all 0.3s ease;
+    bottom: 2rem !important;
+    right: 2rem !important;
+    position: fixed !important;
+}
+
+.whatsapp-float div {
+    width: 4rem !important;
+    height: 4rem !important;
+    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+.whatsapp-float svg {
+    width: 2.25rem !important;
+    height: 2.25rem !important;
+}
+
+.whatsapp-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 12px 28px rgba(37, 211, 102, 0.4);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 1.5rem !important;
+        right: 1.5rem !important;
+    }
+    
+    .whatsapp-float div {
+        width: 3.75rem !important;
+        height: 3.75rem !important;
+    }
+    
+    .whatsapp-float svg {
+        width: 2.1rem !important;
+        height: 2.1rem !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .whatsapp-float {
+        bottom: 1.25rem !important;
+        right: 1.25rem !important;
+    }
+    
+    .whatsapp-float div {
+        width: 3.5rem !important;
+        height: 3.5rem !important;
+    }
+    
+    .whatsapp-float svg {
+        width: 2rem !important;
+        height: 2rem !important;
+    }
+}
+
+/* ===== AJUSTE DE TÍTULOS EN TODAS LAS SECCIONES ===== */
+section h2.font-serif {
+    font-size: 2.5rem !important;
+}
+
+@media (max-width: 768px) {
+    section h2.font-serif {
+        font-size: 2.25rem !important;
+    }
+}
+
+@media (max-width: 640px) {
+    section h2.font-serif {
+        font-size: 2rem !important;
+    }
+}
+
+
+/* ===== LANDSCAPE MODE ===== */
+@media (max-width: 896px) and (orientation: landscape) {
+    #personalizacion .grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 1.5rem !important;
+    }
+    
+    #personalizacion .relative.group {
+        max-width: 280px;
+    }
+    
+    #ocasiones .grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+    }
+    
+    #ocasiones .occasion-card {
+        padding: 1.25rem 0.75rem !important;
+        min-height: 200px !important;
+    }
+    
+    .whatsapp-float {
+        bottom: 1rem !important;
+        right: 1rem !important;
+    }
+    
+    .whatsapp-float div {
+        width: 3rem !important;
+        height: 3rem !important;
+    }
+}
+
+/* Responsive adjustments existentes */
+@media (max-width: 768px) {
+    .arched-top {
+        border-radius: 120px 120px 1rem 1rem;
+    }
+    
+    .speech-bubble-tail::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+/* Estilos para el modal */
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.modal-overlay.active {
+    display: flex;
+}
+
+.modal-content {
+    position: relative;
+    max-width: 90%;
+    max-height: 80vh;
+    margin: auto;
+    animation: modalFadeIn 0.3s ease;
+}
+
+.modal-content img {
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.close-modal {
+    position: absolute;
+    top: -45px;
+    right: 0;
+    width: 44px;
+    height: 44px;
+    border: none;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+    padding: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.close-modal svg {
+    width: 24px;
+    height: 24px;
+    display: block;
+}
+
+.close-modal:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: rotate(90deg);
+}
+
+.image-trigger {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.image-trigger:hover {
+    transform: scale(1.02);
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Ajustes para móvil */
+@media (max-width: 768px) {
+    .modal-content {
+        max-width: 95%;
+        max-height: 70vh;
+    }
+    
+    .close-modal {
+        top: -50px;
+        right: 5px;
+        width: 48px;
+        height: 48px;
+    }
+    
+    .close-modal svg {
+        width: 26px;
+        height: 26px;
+    }
+}
