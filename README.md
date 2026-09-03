@@ -1,11 +1,6 @@
 # 🎁 Detalles Belis — Landing Page Profesional
 
-
-
-\
-
 > Landing page profesional desarrollada para un emprendimiento familiar dedicado a la venta de regalos personalizados.
-
 ---
 
 ## 🌐 Sitio web
