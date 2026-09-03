@@ -148,7 +148,3 @@ El objetivo principal fue proporcionar a un negocio familiar una presencia digit
 Este proyecto fue desarrollado para un cliente real. El código se presenta como muestra de trabajo y demostración de capacidades de desarrollo. Los derechos de uso comercial corresponden al negocio.
 
 ---
-
-<p align="center">
-  Desarrollado con ❤️ para <strong>Detalles Belis</strong>
-</p>
