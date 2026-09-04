@@ -386,18 +386,6 @@ Software Developer
 
 ---
 
-## 📄 Licencia y uso
-
-Este proyecto fue desarrollado para un negocio real.
-
-El código fuente se encuentra publicado con fines de **portafolio profesional, demostración técnica y presentación de capacidades de desarrollo web**.
-
-Los elementos asociados a la identidad comercial de **Detalles Belis**, incluyendo logotipos, imágenes, contenido visual y material de marca, pertenecen a sus respectivos propietarios.
-
-El uso comercial, redistribución o reutilización de estos recursos puede requerir autorización previa.
-
----
-
 ## ⭐ Proyecto de portafolio
 
 Este proyecto forma parte de mi portafolio como **Software Developer** y representa la aplicación práctica de conceptos relacionados con:
