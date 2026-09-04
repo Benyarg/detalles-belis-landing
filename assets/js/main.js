@@ -3,39 +3,86 @@
 // ============================================
 
 document.addEventListener('DOMContentLoaded', function () {
-  // ---- Toggle tema (unificado) ----
+
+  function updateBrowserThemeColor() {
+    const html = document.documentElement;
+    const isDark = html.classList.contains('dark');
+
+    const color = isDark ? '#171416' : '#FFF9FA';
+
+    const metaThemeColor = document.querySelector(
+      'meta[name="theme-color"]'
+    );
+
+    if (metaThemeColor) {
+      metaThemeColor.setAttribute('content', color);
+    }
+
+    html.style.backgroundColor = color;
+  }
+
   function toggleTheme() {
     const html = document.documentElement;
+
     html.classList.toggle('dark');
+
     const isDark = html.classList.contains('dark');
-    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+
+    localStorage.setItem(
+      'theme',
+      isDark ? 'dark' : 'light'
+    );
+
     updateThemeIcons();
+    updateBrowserThemeColor();
   }
 
   function updateThemeIcons() {
-    const isDark = document.documentElement.classList.contains('dark');
-    const icons = document.querySelectorAll('.theme-icon, #theme-icon, #theme-icon-mobile, #theme-toggle-footer .material-symbols-outlined');
+    const isDark =
+      document.documentElement.classList.contains('dark');
+
+    const icons = document.querySelectorAll(
+      '.theme-icon, #theme-icon, #theme-icon-mobile, #theme-toggle-footer .material-symbols-outlined'
+    );
+
     icons.forEach(icon => {
-      icon.textContent = isDark ? 'light_mode' : 'dark_mode';
+      icon.textContent =
+        isDark ? 'light_mode' : 'dark_mode';
     });
   }
 
   function loadTheme() {
     const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const shouldBeDark = saved === 'dark' || (!saved && prefersDark);
+
+    const prefersDark = window.matchMedia(
+      '(prefers-color-scheme: dark)'
+    ).matches;
+
+    const shouldBeDark =
+      saved === 'dark' ||
+      (!saved && prefersDark);
+
     if (shouldBeDark) {
       document.documentElement.classList.add('dark');
     } else {
       document.documentElement.classList.remove('dark');
     }
+
     updateThemeIcons();
+    updateBrowserThemeColor();
   }
 
-  // Listeners para los botones de tema
-  document.getElementById('theme-toggle')?.addEventListener('click', toggleTheme);
-  document.getElementById('theme-toggle-mobile')?.addEventListener('click', toggleTheme);
-  document.getElementById('theme-toggle-footer')?.addEventListener('click', toggleTheme);
+  document
+    .getElementById('theme-toggle')
+    ?.addEventListener('click', toggleTheme);
+
+  document
+    .getElementById('theme-toggle-mobile')
+    ?.addEventListener('click', toggleTheme);
+
+  document
+    .getElementById('theme-toggle-footer')
+    ?.addEventListener('click', toggleTheme);
 
   loadTheme();
 
@@ -487,34 +534,4 @@ window.addEventListener('scroll', () => {
   } else {
     header.classList.remove('scrolled');
   }
-});
-// =====================================================
-// Browser theme color
-// Sincroniza la barra del navegador con el tema actual
-// =====================================================
-
-const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-
-function updateBrowserThemeColor() {
-  const isDarkMode = document.documentElement.classList.contains('dark');
-
-  if (themeColorMeta) {
-    themeColorMeta.setAttribute(
-      'content',
-      isDarkMode ? '#171416' : '#FFF9FA'
-    );
-  }
-}
-
-// Aplicar el color correcto al cargar
-updateBrowserThemeColor();
-
-// Detectar cambios de tema automáticamente
-const themeObserver = new MutationObserver(() => {
-  updateBrowserThemeColor();
-});
-
-themeObserver.observe(document.documentElement, {
-  attributes: true,
-  attributeFilter: ['class']
 });
