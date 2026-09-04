@@ -126,7 +126,7 @@ El proyecto es un sitio web estático, por lo que no requiere instalar dependenc
 ### 1. Clonar el repositorio
 
 ```bash
-git clone https://github.com/Benyarg/detalles-belis.git
+git clone https://github.com/Benyarg/detalles-belis-landing.git
 ```
 
 ### 2. Ingresar al proyecto
