@@ -128,6 +128,7 @@ html.dark {
    ========================================================= */
 
 html {
+  background-color: #FFF9FA;
   margin: 0;
   padding: 0;
 
@@ -135,6 +136,10 @@ html {
   scroll-padding-top: 7rem;
 
   overflow-x: hidden;
+}
+
+html.dark {
+  background-color: #171416;
 }
 
 body {

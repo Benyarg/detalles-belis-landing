@@ -488,3 +488,33 @@ window.addEventListener('scroll', () => {
     header.classList.remove('scrolled');
   }
 });
+// =====================================================
+// Browser theme color
+// Sincroniza la barra del navegador con el tema actual
+// =====================================================
+
+const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+
+function updateBrowserThemeColor() {
+  const isDarkMode = document.documentElement.classList.contains('dark');
+
+  if (themeColorMeta) {
+    themeColorMeta.setAttribute(
+      'content',
+      isDarkMode ? '#171416' : '#FFF9FA'
+    );
+  }
+}
+
+// Aplicar el color correcto al cargar
+updateBrowserThemeColor();
+
+// Detectar cambios de tema automáticamente
+const themeObserver = new MutationObserver(() => {
+  updateBrowserThemeColor();
+});
+
+themeObserver.observe(document.documentElement, {
+  attributes: true,
+  attributeFilter: ['class']
+});
