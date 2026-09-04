@@ -4,8 +4,8 @@
   "description": "Regalos personalizados para momentos especiales.",
   "start_url": "/",
   "display": "standalone",
-  "background_color": "#FFFFFF",
-  "theme_color": "#FFFFFF",
+  "background_color": "#FFF9FA",
+  "theme_color": "#FFF9FA",
   "icons": [
     {
       "src": "assets/img/android-chrome-192x192.png",
