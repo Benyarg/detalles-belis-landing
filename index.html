@@ -1,1332 +1,1030 @@
 <!DOCTYPE html>
 <html class="light" lang="es">
-
 <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Detalles Beli's - Regalos Personalizados en Cajamarca</title>
-    <!-- Preloader CSS -->
-    <link rel="stylesheet" href="css/preloader.css">
-    <!-- Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Dancing+Script:wght@600&display=swap"
-        rel="stylesheet" />
-    <!-- Material Symbols -->
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
-        rel="stylesheet" />
-    <!-- Main CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Detalles Belis | Regalos personalizados para momentos especiales</title>
+<meta name="description" content="Regalos personalizados hechos a mano para celebrar, agradecer y sorprender. Descubre detalles únicos creados para convertir momentos especiales en recuerdos inolvidables." />
+<meta name="keywords" content="regalos personalizados, detalles personalizados, regalos hechos a mano, boxes personalizados, rosas eternas, cartas personalizadas, chocolates, regalos especiales, Detalles Belis" />
+<meta name="author" content="Detalles Belis" />
+<meta name="robots" content="index, follow" />
+<meta name="theme-color" content="#F0A0C0" />
+<link rel="canonical" href="https://detallesbelis.com/" />
+  
+<!-- Favicon -->
+<link rel="icon" href="assets/img/favicon.ico" sizes="any" />
+<link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="assets/img/apple-touch-icon.png" />
+<link rel="manifest" href="site.webmanifest" />
 
-    <script id="tailwind-config">
-        tailwind.config = {
-            darkMode: "class",
-            theme: {
-                extend: {
-                    colors: {
-                        "primary": "#7a5c9d",
-                        "accent-pink": "#F7A1C4",
-                        "text-muted": "#6B6B6B",
-                        "background-light": "#FFF9F9",
-                        "background-dark": "#19161c",
-                    },
-                    fontFamily: {
-                        "display": ["Plus Jakarta Sans", "sans-serif"],
-                        "serif": ["Playfair Display", "serif"],
-                        "cursive": ["Dancing Script", "cursive"]
-                    },
-                    borderRadius: {
-                        "DEFAULT": "1rem",
-                        "lg": "2rem",
-                        "xl": "3rem",
-                        "full": "9999px"
-                    },
-                },
+<!-- Open Graph -->
+<meta property="og:title" content="Detalles Belis | Regalos personalizados para momentos especiales" />
+<meta property="og:description" content="Detalles hechos a mano y personalizados para convertir una ocasión especial en un recuerdo inolvidable." />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://detallesbelis.com/" />
+<meta property="og:site_name" content="Detalles Belis" />
+<meta property="og:locale" content="es_PE" />
+<meta property="og:image" content="https://detallesbelis.com/assets/img/og-detalles-belis.jpg" />
+<meta property="og:image:type" content="image/jpeg" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Detalles Belis - Regalos personalizados para momentos especiales" />
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Detalles Belis | Regalos personalizados" />
+<meta name="twitter:description" content="Regalos personalizados hechos a mano para celebrar, agradecer y sorprender en momentos especiales." />
+<meta name="twitter:image" content="https://detallesbelis.com/assets/img/og-detalles-belis.jpg" />
+<meta name="twitter:image:alt" content="Detalles Belis - Regalos personalizados para momentos especiales" />
+
+<script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Detalles Belis",
+      "url": "https://detallesbelis.com/",
+      "logo": "https://detallesbelis.com/assets/img/logo_detallesbelis.png",
+      "description": "Regalos personalizados hechos a mano para celebrar, agradecer y sorprender en momentos especiales.",
+      "email": "mailto:detallesbelis@gmail.com",
+      "telephone": "+51 998 282 536",
+      "sameAs": [
+        "https://www.instagram.com/belis_pe/"
+      ],
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+51 998 282 536",
+        "contactType": "customer service",
+        "availableLanguage": "Spanish"
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="assets/css/preloader.css" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,700&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            belis: {
+              primary: "#F0A0C0",
+              hover: "#E88CAF",
+              light: "#F8DCE7",
+              soft: "#FBEAF0",
+              dark: "#D9799F"
             },
+            gold: {
+              DEFAULT: "#E8C978",
+              light: "#F5E7B5"
+            },
+            botanical: {
+              DEFAULT: "#789879",
+              light: "#E4EEE4"
+            },
+            background: {
+              DEFAULT: "#FFF9FA",
+              secondary: "#FFF1F5",
+              tertiary: "#F8DCE7",
+              card: "#FFFFFF",
+              dark: "#171318"
+            },
+            text: {
+              DEFAULT: "#171318",
+              secondary: "#6F6269",
+              muted: "#9C8F96",
+              light: "#FFF9FA"
+            },
+            border: {
+              light: "#F2DDE5",
+              DEFAULT: "#E8C4D1",
+              dark: "#CFAAB9"
+            },
+            success: {
+              DEFAULT: "#789879",
+              light: "#E4EEE4"
+            },
+            warning: {
+              DEFAULT: "#D9A441",
+              light: "#FFF3D6"
+            },
+            error: {
+              DEFAULT: "#C96D7D",
+              light: "#FBE3E7"
+            },
+            info: {
+              DEFAULT: "#8B9FC1",
+              light: "#E9EEF7"
+            }
+          },
+          boxShadow: {
+            "belis-sm": "0 2px 8px rgba(23, 19, 24, 0.06)",
+            "belis-md": "0 8px 24px rgba(23, 19, 24, 0.09)",
+            "belis-lg": "0 16px 40px rgba(23, 19, 24, 0.12)",
+            "belis-pink": "0 10px 30px rgba(240, 160, 192, 0.25)"
+          },
+          borderRadius: {
+            belis: "14px",
+            "belis-lg": "22px",
+            "belis-xl": "32px"
+          },
+          fontFamily: {
+            serif: ["Playfair Display", "serif"],
+            sans: ["Poppins", "sans-serif"],
+            cursive: ["Dancing Script", "cursive"]
+          }
         }
-    </script>
+      }
+    };
+  </script>
 </head>
-
-<body class="bg-background-light dark:bg-background-dark font-display text-[#141216] dark:text-white antialiased">
-
-    <!-- Preloader -->
-    <div id="preloader">
-        <div class="preloader-content">
-            <div class="preloader-logo">
-                <div class="preloader-icon">
-                    <img src="img/logo_belis_pe.png" alt="Detalles Beli's Logo">
-                </div>
-            </div>
-            <div class="preloader-spinner"></div>
-            <p class="preloader-text">Cargando amor y detalles...</p>
-        </div>
+<body class="bg-background text-text font-sans antialiased transition-colors duration-300 dark:bg-background-dark dark:text-text-light">
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="preloader-content">
+      <div class="preloader-logo">
+        <img src="assets/img/logo_detallesbelis.png" alt="Detalles Belis" class="h-24 w-24 object-contain" />
+      </div>
+      <div class="preloader-spinner"></div>
+      <p class="preloader-text">Preparando tu próximo detalle...</p>
     </div>
-
-    <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
-
-        <!-- Header / Navigation -->
-        <header
-            class="fixed top-0 z-50 w-full border-b border-[#edebef]/50 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-md px-6 md:px-20 py-4 transition-all duration-300">
-            <div class="mx-auto max-w-[1200px]">
-                <!-- Móvil: Flex simple -->
-                <div class="flex items-center justify-between md:hidden">
-                    <!-- Logo -->
-                    <div class="flex items-center">
-                        <img src="img/logo_belis_pe.png" alt="Detalles Beli's Logo"
-                            class="h-24 w-24 object-contain">
-                    </div>
-                    <!-- Mobile Menu Button -->
-                    <button id="mobile-menu-button" class="p-2">
-                        <span class="material-symbols-outlined">menu</span>
-                    </button>
-                </div>
-
-                <!-- Desktop: Grid para centrado perfecto -->
-                <div class="hidden md:grid md:grid-cols-3 items-center">
-                    <!-- Logo a la izquierda -->
-                    <div class="flex items-center">
-                        <img src="img/logo_belis_pe.png" alt="Detalles Beli's Logo" class="h-24 w-24 object-contain">
-                    </div>
-
-                    <!-- Navegación Centrada -->
-                    <nav id="main-nav" class="flex items-center justify-center">
-                        <div class="flex gap-8 lg:gap-10">
-                            <a class="nav-link text-sm font-semibold hover:text-primary transition-colors"
-                                href="#hero">Inicio</a>
-                            <a class="nav-link text-sm font-semibold hover:text-primary transition-colors"
-                                href="#nosotros">Nosotros</a>
-                            <a class="nav-link text-sm font-semibold hover:text-primary transition-colors"
-                                href="#catalogo">Catálogo</a>
-                            <a class="nav-link text-sm font-semibold hover:text-primary transition-colors"
-                                href="#personalizacion">Personalización</a>
-                            <a class="nav-link text-sm font-semibold hover:text-primary transition-colors"
-                                href="#contacto">Contacto</a>
-                        </div>
-                    </nav>
-
-                    <!-- Botones Derecha -->
-                    <div class="flex items-center justify-end gap-4">
-                        <button id="theme-toggle"
-                            class="p-2 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors">
-                            <span id="theme-icon-moon"
-                                class="material-symbols-outlined text-gray-700 dark:text-gray-300">
-                                dark_mode
-                            </span>
-                            <span id="theme-icon-sun" class="material-symbols-outlined text-yellow-500 hidden">
-                                light_mode
-                            </span>
-                        </button>
-
-                        <a href="#contacto"
-                            class="flex items-center gap-2 rounded-full bg-primary px-6 py-2.5 text-sm font-bold text-white transition-all hover:bg-primary/90 hover:shadow-lg active:scale-95 scroll-smooth">
-                            <span>Contáctanos</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Mobile Menu -->
-            <div id="mobile-menu"
-                class="md:hidden hidden bg-white dark:bg-background-dark mt-4 rounded-lg shadow-xl p-6">
-                <div class="flex flex-col gap-4">
-                    <a class="nav-link text-sm font-semibold hover:text-primary transition-colors py-2 border-b border-gray-100 dark:border-gray-800"
-                        href="#hero">Inicio</a>
-                    <a class="nav-link text-sm font-semibold hover:text-primary transition-colors py-2 border-b border-gray-100 dark:border-gray-800"
-                        href="#catalogo">Catálogo</a>
-                    <a class="nav-link text-sm font-semibold hover:text-primary transition-colors py-2 border-b border-gray-100 dark:border-gray-800"
-                        href="#nosotros">Nosotros</a>
-                    <a class="nav-link text-sm font-semibold hover:text-primary transition-colors py-2 border-b border-gray-100 dark:border-gray-800"
-                        href="#personalizacion">Personalización</a>
-                    <a class="nav-link text-sm font-semibold hover:text-primary transition-colors py-2"
-                        href="#contacto">Contacto</a>
-                </div>
-
-                <div class="flex items-center justify-between mt-6">
-                    <!-- Botón Modo Oscuro en móvil -->
-                    <button id="theme-toggle-mobile"
-                        class="p-3 rounded-full hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors flex items-center gap-2">
-                        <!-- Solo UN ícono a la vez -->
-                        <span id="theme-icon-mobile" class="material-symbols-outlined text-gray-700 dark:text-gray-300">
-                            dark_mode
-                        </span>
-                        <span class="text-sm font-medium">Modo Oscuro</span>
-                    </button>
-
-                    <!-- Botón Contáctanos en móvil -->
-                    <a href="#contacto"
-                        class="flex items-center justify-center gap-2 rounded-full bg-primary px-6 py-3 text-sm font-bold text-white transition-all hover:bg-primary/90 scroll-smooth">
-                        <span>Contáctanos</span>
-                    </a>
-                </div>
-            </div>
-        </header>
-        <!-- Hero Section -->
-        <section id="hero" class="relative pt-32 pb-20 md:pt-40 md:pb-32">
-            <!-- Background Decoration -->
-            <div class="floral-pattern absolute inset-0 pointer-events-none"></div>
-            <div class="container mx-auto max-w-[1200px] px-6">
-                <div class="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-20">
-                    <!-- Hero Visual (Left) -->
-                    <div class="relative order-2 lg:order-1">
-                        <div
-                            class="relative aspect-[4/5] w-full overflow-hidden rounded-xl shadow-2xl transition-transform hover:scale-[1.01]">
-                            <div class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10"></div>
-                            <div
-                                class="h-full w-full bg-[url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&amp;w=2000&amp;auto=format&amp;fit=crop')] bg-cover bg-center">
-                            </div>
-                        </div>
-                        <!-- Floating Badge -->
-                        <div
-                            class="absolute -bottom-6 -right-6 hidden sm:flex h-32 w-32 items-center justify-center rounded-full bg-accent-pink p-4 text-center shadow-xl lg:flex">
-                            <span
-                                class="font-serif text-xs font-bold uppercase tracking-widest text-white italic">Diseñado
-                                con amor</span>
-                        </div>
-                        <!-- Decorative Shapes -->
-                        <div class="absolute -left-10 -top-10 -z-10 h-40 w-40 rounded-full bg-primary/10 blur-3xl">
-                        </div>
-                        <div
-                            class="absolute -right-20 bottom-20 -z-10 h-60 w-60 rounded-full bg-accent-pink/20 blur-[100px]">
-                        </div>
-                    </div>
-
-                    <!-- Hero Content -->
-                    <div class="order-1 flex flex-col items-center text-center lg:order-2 lg:items-start lg:text-left">
-                        <span
-                            class="mb-4 inline-block rounded-full bg-accent-pink/20 px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-accent-pink">Hecho
-                            Especial Para Ti</span>
-                        <h1
-                            class="mb-6 font-serif text-5xl font-black leading-tight text-primary dark:text-white md:text-7xl lg:leading-[1.1]">
-                            Regala <span class="text-accent-pink">amor y dulzura</span> en cada detalle
-                        </h1>
-                        <p class="mb-10 max-w-md text-lg leading-relaxed text-text-muted dark:text-gray-300 md:text-xl">
-                            Transformamos sentimientos en regalos únicos. Expertos en personalizacion que crean momentos
-                            inolvidables con acabado artesenales de excelencia.
-                        </p>
-                        <div class="flex flex-col gap-4 sm:flex-row">
-                            <a href="#catalogo"
-                                class="scroll-btn group flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary/90 hover:shadow-primary/30 active:scale-95">
-                                <span
-                                    class="material-symbols-outlined text-lg group-hover:rotate-12 transition-transform">local_florist</span>
-                                Ver Catálogo
-                            </a>
-                            <a href="#nosotros"
-                                class="scroll-btn flex items-center justify-center gap-2 rounded-full border-2 border-primary/20 bg-transparent px-7 py-3.5 text-base font-semibold text-primary transition-all hover:bg-primary/5 dark:text-accent-pink dark:border-accent-pink/20">
-                                <span class="material-symbols-outlined text-lg">favorite</span>
-                                Sobre Nosotros
-                            </a>
-                        </div>
-
-                        <!-- Trust Markers -->
-                        <div class="mt-12 flex items-center gap-6">
-                            <div class="flex -space-x-3">
-                                <div
-                                    class="h-10 w-10 overflow-hidden rounded-full border-2 border-background-light ring-2 ring-primary/20">
-                                    <div
-                                        class="h-full w-full bg-gray-200 bg-[url('https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&auto=format&fit=crop')] bg-cover">
-                                    </div>
-                                </div>
-                                <div
-                                    class="h-10 w-10 overflow-hidden rounded-full border-2 border-background-light ring-2 ring-primary/20">
-                                    <div
-                                        class="h-full w-full bg-gray-200 bg-[url('https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&auto=format&fit=crop')] bg-cover">
-                                    </div>
-                                </div>
-                                <div
-                                    class="h-10 w-10 overflow-hidden rounded-full border-2 border-background-light ring-2 ring-primary/20">
-                                    <div
-                                        class="h-full w-full bg-gray-200 bg-[url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=100&auto=format&fit=crop')] bg-cover">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="text-sm font-medium text-text-muted dark:text-gray-400">
-                                <span class="block font-bold text-primary dark:text-accent-pink">+500</span>
-                                Clientes felices
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Nosotros Section -->
-        <section id="nosotros" class="relative py-20 md:py-28 overflow-hidden bg-white dark:bg-background-dark">
-            <div class="max-w-[1200px] mx-auto px-6 lg:px-10">
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-                    <!-- Left Column: Content -->
-                    <div class="flex flex-col gap-6">
-                        <div class="flex flex-col gap-6">
-                            <div class="flex items-center gap-2 mb-2">
-                                <span class="h-px w-8 bg-accent-pink"></span>
-                                <span class="text-accent-pink font-bold text-sm uppercase tracking-widest">Nuestra
-                                    Esencia</span>
-                            </div>
-                            <h2
-                                class="text-primary dark:text-accent-pink text-4xl md:text-5xl font-extrabold leading-[1.15] tracking-tight font-serif">
-                                Hecho con amor, pensado para emocionar
-                            </h2>
-                            <div class="space-y-4">
-                                <p class="text-text-muted dark:text-gray-400 leading-relaxed">
-                                    En Detalles Beli's, cada regalo es una obra de arte. Dedicados a transformar tus
-                                    sentimientos en piezas únicas hechas a mano, cuidando cada detalle para que tu
-                                    sorpresa sea inolvidable.
-                                </p>
-                                <p class="text-text-muted dark:text-gray-400 leading-relaxed">
-                                    Creemos que los mejores obsequios son aquellos que cuentan una historia. Por eso,
-                                    nuestro proceso es 100% artesanal, seleccionando los mejores materiales para crear
-                                    momentos que perduren en el tiempo.
-                                </p>
-                            </div>
-                        </div>
-                        <!-- Mini Feature Grid -->
-                        <div class="grid grid-cols-2 gap-6 pt-2">
-                            <div class="flex flex-col gap-2">
-                                <div class="text-primary"><span
-                                        class="material-symbols-outlined text-3xl">volunteer_activism</span></div>
-                                <p class="text-primary font-bold">100% Artesanal</p>
-                                <p class="text-sm text-text-muted">Manos expertas creando magia.</p>
-                            </div>
-                            <div class="flex flex-col gap-2">
-                                <div class="text-primary"><span
-                                        class="material-symbols-outlined text-3xl">local_shipping</span></div>
-                                <p class="text-primary font-bold">Envíos Seguros</p>
-                                <p class="text-sm text-text-muted">Tu detalle llega perfecto a su destino.</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Column: Visual with Border Accent -->
-                    <div class="relative">
-                        <!-- Decorative Background Element -->
-                        <div
-                            class="absolute -top-6 -right-6 w-full h-full bg-accent-pink/20 rounded-xl translate-x-4 translate-y-4 -z-10">
-                        </div>
-                        <div
-                            class="absolute -bottom-6 -left-6 w-32 h-32 border-4 border-accent-pink/30 rounded-full -z-10">
-                        </div>
-
-                        <!-- Main Image Container -->
-                        <div
-                            class="relative overflow-hidden rounded-xl shadow-2xl border-8 border-white dark:border-white/5">
-                            <div class="aspect-[4/5] bg-center bg-no-repeat bg-cover transform hover:scale-105 transition-transform duration-700"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuCGl31hKQNY8P2bUR2mgOLdT2fnbaEWEBiYKMALI37HJwxa5Luu00EoARMKHlGtk_BSeEvQL3awMpsWI1SisPjsdFeKnhdYqeBh3L06-Ls76wROv_bT-AP2M0TU7PlfoapMEgKDPl5a9P0akJCkrlSna3y2dxRLqZzeVD_6piz1-TvCxAzNDVeVe_tXRpqwL35hFucOj3V-jsjhqXu5fnnk7Zehb1SfWBVZtYRqd_f2cnCfG5dKETBG9qrW8s4bHXvRiezFcqrVRww");'>
-                            </div>
-
-                            <!-- Emotional Overlay -->
-                            <div
-                                class="absolute bottom-0 left-0 right-0 p-8 bg-gradient-to-t from-black/60 to-transparent">
-                                <p class="text-white text-sm font-medium italic">"Cada lazo, cada color, cada detalle
-                                    lleva un pedacito de nuestro corazón."</p>
-                            </div>
-                        </div>
-
-                        <!-- Decorative floating badge -->
-                        <div
-                            class="absolute -bottom-10 right-10 bg-white dark:bg-background-dark p-5 rounded-xl shadow-xl border border-background-light dark:border-white/10 hidden md:block">
-                            <div class="flex items-center gap-3">
-                                <div
-                                    class="size-11 bg-accent-pink/10 rounded-full flex items-center justify-center text-accent-pink">
-                                    <span class="material-symbols-outlined text-lg">auto_awesome</span>
-                                </div>
-                                <div class="space-y-0.5">
-                                    <p class="text-primary dark:text-white font-bold text-base leading-tight">Regalos
-                                        Perfectos</p>
-                                    <p class="text-text-muted text-[11px] uppercase tracking-wider font-medium">Hechos a
-                                        Mano</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Stats Section -->
-        <section class="py-16 bg-background-light dark:bg-white/5">
-            <div class="max-w-[1200px] mx-auto px-6 lg:px-10">
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <div
-                        class="flex flex-col gap-3 rounded-xl p-8 bg-white dark:bg-background-dark border border-accent-pink/20 shadow-sm hover:shadow-xl transition-all">
-                        <p class="text-text-muted dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">
-                            Regalos Entregados</p>
-                        <p class="text-primary dark:text-accent-pink text-4xl font-extrabold">+300</p>
-                    </div>
-                    <div
-                        class="flex flex-col gap-3 rounded-xl p-8 bg-white dark:bg-background-dark border border-accent-pink/20 shadow-sm hover:shadow-xl transition-all">
-                        <p class="text-text-muted dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">
-                            Clientes Felices</p>
-                        <p class="text-primary dark:text-accent-pink text-4xl font-extrabold">100%</p>
-                    </div>
-                    <div
-                        class="flex flex-col gap-3 rounded-xl p-8 bg-white dark:bg-background-dark border border-accent-pink/20 shadow-sm hover:shadow-xl transition-all">
-                        <p class="text-text-muted dark:text-gray-400 text-sm font-semibold uppercase tracking-wider">
-                            Años de Experiencia</p>
-                        <p class="text-primary dark:text-accent-pink text-4xl font-extrabold">5+</p>
-                    </div>
-                </div>
-
-                <!-- Botones Centrados con espaciado adecuado -->
-                <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#catalogo"
-                        class="scroll-btn group flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary/90 hover:shadow-primary/30 active:scale-95">
-                        <span
-                            class="material-symbols-outlined text-lg group-hover:rotate-12 transition-transform">inventory_2</span>
-                        Ver Catálogo
-                    </a>
-                    <a href="#personalizacion"
-                        class="scroll-btn flex items-center justify-center gap-2 rounded-full border-2 border-primary/20 bg-transparent px-7 py-3.5 text-base font-semibold text-primary transition-all hover:bg-primary/5 dark:text-accent-pink dark:border-accent-pink/20">
-                        <span class="material-symbols-outlined text-lg">auto_awesome</span>
-                        Personalizar
-                    </a>
-                </div>
-            </div>
-        </section>
-        <!-- Catálogo Section -->
-        <section id="catalogo" class="py-20 bg-background-light/50 dark:bg-background-dark/50">
-            <div class="max-w-[1200px] mx-auto px-6">
-                <div class="text-center mb-16">
-                    <div class="flex items-center justify-center gap-2 mb-10">
-                        <span class="h-px w-8 bg-accent-pink"></span>
-                        <span class="text-accent-pink font-bold text-sm uppercase tracking-widest">Nuestra
-                            Coleccion</span>
-                        <span class="h-px w-8 bg-accent-pink"></span>
-                    </div>
-                    <h2 class="font-serif text-primary text-4xl md:text-5xl font-bold mb-4 leading-tight">
-                        Catálogo de Detalles Especiales
-                    </h2>
-                    <p class="text-text-muted text-lg max-w-2xl mx-auto">
-                        Descubre nuestra selección exclusiva de regalos diseñados para emocionar. Cada detalle es
-                        elaborado a mano con amor en Cajamarca.
-                    </p>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    <!-- Card 1: Rosas Elegantes -->
-                    <div
-                        class="catalog-card flex flex-col bg-white dark:bg-background-dark/50 border-2 border-transparent rounded-xl p-2 transition-all duration-300 shadow-sm hover:shadow-xl">
-                        <div class="arched-top w-full aspect-[4/5] overflow-hidden mb-6 flex items-center justify-center cursor-pointer image-trigger"
-                            onclick="openModal(this)">
-                            <img src="img/Flores eternas.png" alt="Rosas Eternas"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <div class="px-4 pb-6 text-center">
-                            <h3 class="font-serif text-primary text-2xl mb-2">Rosas Eternas</h3>
-                            <p class="text-text-muted text-sm mb-4 leading-relaxed">
-                                Belleza eterna que perdura en el tiempo, perfecta para expresar amor duradero.
-                            </p>
-                            <a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 hover:underline catalog-link"
-                                href="#contacto">
-                                Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 2: Boxes Personalizados -->
-                    <div
-                        class="catalog-card flex flex-col bg-white dark:bg-background-dark/50 border-2 border-transparent rounded-xl p-2 transition-all duration-300 shadow-sm hover:shadow-xl">
-                        <div class="arched-top w-full aspect-[4/5] overflow-hidden mb-6 flex items-center justify-center cursor-pointer image-trigger"
-                            onclick="openModal(this)">
-                            <img src="img/boxes_personalizados.png" alt="Boxes Personalizados"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <div class="px-4 pb-6 text-center">
-                            <h3 class="font-serif text-primary text-2xl mb-2">Boxes Personalizados</h3>
-                            <p class="text-text-muted text-sm mb-4 leading-relaxed">
-                                Sorpresas únicas diseñadas a tu medida con tus fotos y snacks favoritos.
-                            </p>
-                            <a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 hover:underline catalog-link"
-                                href="#contacto">
-                                Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 3: Peluches Premium -->
-                    <div
-                        class="catalog-card flex flex-col bg-white dark:bg-background-dark/50 border-2 border-transparent rounded-xl p-2 transition-all duration-300 shadow-sm hover:shadow-xl">
-                        <div class="arched-top w-full aspect-[4/5] overflow-hidden mb-6 flex items-center justify-center cursor-pointer image-trigger"
-                            onclick="openModal(this)">
-                            <img src="img/peluches_premium.png" alt="Peluches Premium"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <div class="px-4 pb-6 text-center">
-                            <h3 class="font-serif text-primary text-2xl mb-2">Peluches Premium</h3>
-                            <p class="text-text-muted text-sm mb-4 leading-relaxed">
-                                El compañero suave y perfecto para complementar un regalo inolvidable.
-                            </p>
-                            <a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 hover:underline catalog-link"
-                                href="#contacto">
-                                Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 4: Cartas Decorativas -->
-                    <div
-                        class="catalog-card flex flex-col bg-white dark:bg-background-dark/50 border-2 border-transparent rounded-xl p-2 transition-all duration-300 shadow-sm hover:shadow-xl">
-                        <div class="arched-top w-full aspect-[4/5] overflow-hidden mb-6 flex items-center justify-center cursor-pointer image-trigger"
-                            onclick="openModal(this)">
-                            <img src="img/cartas_personalizadas.png" alt="Cartas Personalizadas"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <div class="px-4 pb-6 text-center">
-                            <h3 class="font-serif text-primary text-2xl mb-2">Cartas Personalizadas</h3>
-                            <p class="text-text-muted text-sm mb-4 leading-relaxed">
-                                Mensajes escritos a mano con caligrafía artística y estilo vintage.
-                            </p>
-                            <a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 hover:underline catalog-link"
-                                href="#contacto">
-                                Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 5: Chocolates -->
-                    <div
-                        class="catalog-card flex flex-col bg-white dark:bg-background-dark/50 border-2 border-transparent rounded-xl p-2 transition-all duration-300 shadow-sm hover:shadow-xl">
-                        <div class="arched-top w-full aspect-[4/5] overflow-hidden mb-6 flex items-center justify-center cursor-pointer image-trigger"
-                            onclick="openModal(this)">
-                            <img src="img/chocolates.png" alt="Chocolates Gourmet"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <div class="px-4 pb-6 text-center">
-                            <h3 class="font-serif text-primary text-2xl mb-2">Chocolates Gourmet</h3>
-                            <p class="text-text-muted text-sm mb-4 leading-relaxed">
-                                Dulces momentos en presentaciones exclusivas y sabores artesanales.
-                            </p>
-                            <a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 hover:underline catalog-link"
-                                href="#contacto">
-                                Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Card 6: Cajas Personalizadas -->
-                    <div
-                        class="catalog-card flex flex-col bg-white dark:bg-background-dark/50 border-2 border-transparent rounded-xl p-2 transition-all duration-300 shadow-sm hover:shadow-xl">
-                        <div class="arched-top w-full aspect-[4/5] overflow-hidden mb-6 flex items-center justify-center cursor-pointer image-trigger"
-                            onclick="openModal(this)">
-                            <img src="img/cajas_personalizadas.png" alt="Caja Personalizada"
-                                class="w-full h-full object-cover">
-                        </div>
-                        <div class="px-4 pb-6 text-center">
-                            <h3 class="font-serif text-primary text-2xl mb-2">Cajas Personalizadas</h3>
-                            <p class="text-text-muted text-sm mb-4 leading-relaxed">
-                                El detalle perfecto para un recuerdo inolvidable, cada pieza con su esencia.
-                            </p>
-                            <a class="text-primary font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-1 hover:underline catalog-link"
-                                href="#contacto">
-                                Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                            </a>
-                        </div>
-                    </div>
-
-                    <!-- Modal para imágenes -->
-                    <div class="modal-overlay" id="imageModal">
-                        <div class="modal-content">
-                            <button class="close-modal" id="closeModal" aria-label="Cerrar">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <line x1="18" y1="6" x2="6" y2="18"></line>
-                                    <line x1="6" y1="6" x2="18" y2="18"></line>
-                                </svg>
-                            </button>
-                            <img src="" alt="Imagen ampliada" id="modalImage">
-                        </div>
-                    </div>
-                </div>
-                <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#contacto"
-                        class="scroll-btn group flex items-center justify-center gap-2 rounded-full bg-primary px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-primary/90 hover:shadow-primary/30 active:scale-95">
-                        <span
-                            class="material-symbols-outlined text-lg group-hover:rotate-12 transition-transform">chat</span>
-                        Crea tu Regalo Ideal
-                    </a>
-                    <a href="#ocasiones"
-                        class="scroll-btn flex items-center justify-center gap-2 rounded-full border-2 border-primary/20 bg-transparent px-7 py-3.5 text-base font-semibold text-primary transition-all hover:bg-primary/5 dark:text-accent-pink dark:border-accent-pink/20">
-                        <span class="material-symbols-outlined text-lg">event</span>
-                        Ver por Ocasión
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Personalización Section -->
-        <section id="personalizacion" class="pt-12 lg:pt-16 pb-20 lg:pb-32 bg-white dark:bg-background-dark">
-            <div class="max-w-[1200px] mx-auto">
-                <div class="grid lg:grid-cols-2 gap-16 items-center">
-                    <div class="relative group">
-                        <div class="rounded-xl overflow-hidden soft-shadow aspect-[4/5] relative z-10">
-                            <div class="w-full h-full bg-cover bg-center transform group-hover:scale-105 transition-transform duration-700"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAn0Gbp2aG65UZEyTdHERp-ZRBq3T5rqKL2ypgyr1Kza4fOpuBkNbMUESpIMJdBBVGDEM0fzYOESXuGR71ZFn108Biw2XU1O729_8lh4W76j75Ucz6fgUsISdsmW8BFzpqi2JP8LkHOsxtfYXoUZSfVHSyk9dJN8wKezzn9CftUaaLLlncs0UAdbLq7EddKiqfAybmGo74mpKORpY_SRUb5y7gTPrTi1wKPwGygn4VTFCH9sRAE6s-EJTaD8NTDbdVxgKpEWB80CME");'>
-                            </div>
-                            <div class="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-                        </div>
-                        <div
-                            class="absolute -bottom-8 -right-8 w-1/2 rounded-xl overflow-hidden soft-shadow border-4 border-white dark:border-background-dark z-20 hidden md:block">
-                            <div class="w-full aspect-square bg-cover bg-center"
-                                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBaLJm2ZtNs6Zz3BaPT2W0cak-_pL4XFZwMhlw_nu_YFhSlKGDLdLfYjqYkb1k3Ln0fRinsIWMzhVdgUniHqM4ymPkZeJK16WUfvlH3X65_58r1AyqmbVU0y43tNkZepzGdtLqk6EZ28cA7ZAdrmXNASsB2xG_6TlPNs0H-BGcxk1mH5HLnUYlsZ9_BL8iDkDpcndmxL_GC8A0bWCW0iAuSQJ38v82i8xDMi9xrq6nZKuZnc-PIAHPg3CBUw41TqZz6pJhE-wBTNTE");'>
-                            </div>
-                        </div>
-                        <div class="absolute -top-12 -left-12 w-48 h-48 bg-accent-pink/10 rounded-full blur-3xl -z-10">
-                        </div>
-                        <div class="absolute bottom-0 right-0 w-64 h-64 bg-primary/10 rounded-full blur-3xl -z-10">
-                        </div>
-                    </div>
-
-                    <div class="space-y-8">
-                        <div class="space-y-2">
-                            <div class="flex items-center gap-2 mb-10">
-                                <span class="h-px w-8 bg-accent-pink"></span>
-                                <span class="text-accent-pink font-bold text-sm uppercase tracking-widest">Elegancia
-                                    Hecha Regalo</span>
-                            </div>
-                            <h2 class="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight dark:text-white">
-                                Cada detalle cuenta una <span class="text-primary italic">historia</span>
-                            </h2>
-                        </div>
-                        <p class="text-lg text-text-muted leading-relaxed font-light">
-                            En <strong class="text-primary font-semibold">Beli's</strong>, no solo envolvemos regalos;
-                            transformamos tus sentimientos en objetos tangibles. Creemos que la verdadera conexión
-                            reside en la <span class="border-b-2 border-accent-pink/40">personalización total</span>.
-                        </p>
-
-                        <div class="grid sm:grid-cols-2 gap-8 py-4">
-                            <div class="flex gap-4">
-                                <div class="bg-background-light dark:bg-primary/20 p-3 rounded-full h-fit">
-                                    <span class="material-symbols-outlined text-primary">draw</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-1">Hecho a mano</h4>
-                                    <p class="text-sm text-text-muted">Artesanía dedicada en cada trazo y cada lazo.</p>
-                                </div>
-                            </div>
-                            <div class="flex gap-4">
-                                <div class="bg-background-light dark:bg-primary/20 p-3 rounded-full h-fit">
-                                    <span class="material-symbols-outlined text-primary">auto_fix_high</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-semibold text-lg mb-1">Diseño Único</h4>
-                                    <p class="text-sm text-text-muted">Tus ideas son nuestra inspiración principal.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="flex flex-col sm:flex-row gap-4 pt-6">
-                            <a href="#contacto"
-                                class="scroll-btn group flex items-center justify-center px-7 py-3.5 bg-primary text-white rounded-full text-base font-semibold hover:bg-primary/90 transition-all hover:-translate-y-1 shadow-lg">
-                                <span
-                                    class="material-symbols-outlined text-lg mr-2 group-hover:rotate-12 transition-transform">brush</span>
-                                Diseñar Mi Regalo
-                            </a>
-                            <a href="#proceso-creacion"
-                                class="scroll-btn flex items-center justify-center px-7 py-3.5 border-2 border-primary/30 text-primary rounded-full text-base font-semibold hover:bg-primary/5 transition-all">
-                                <span class="material-symbols-outlined text-lg mr-2">sync</span>
-                                Ver Proceso
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <!-- Proceso de Creación Section -->
-        <section id="proceso-creacion" class="bg-background-light dark:bg-primary/5 py-24">
-            <div class="max-w-5xl mx-auto px-6 text-center">
-                <div class="flex items-center justify-center gap-2 mb-12">
-                    <span class="h-px w-8 bg-accent-pink"></span>
-                    <span class="text-accent-pink font-bold text-sm uppercase tracking-widest">Nuestro Proceso</span>
-                    <span class="h-px w-8 bg-accent-pink"></span>
-                </div>
-                <h3 class="text-4xl font-serif mb-16 dark:text-white font-bold">Nuestra esencia está en los detalles
-                </h3>
-                <div class="grid md:grid-cols-3 gap-12">
-                    <div class="space-y-4">
-                        <div class="text-5xl font-cursive text-accent-pink mb-2">01</div>
-                        <h4 class="text-xl font-semibold text-primary">Escuchamos</h4>
-                        <p class="text-text-muted dark:text-gray-400 font-light">Cuéntanos sobre esa persona especial y
-                            lo que quieres transmitir.</p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="text-5xl font-cursive text-accent-pink mb-2">02</div>
-                        <h4 class="text-xl font-semibold text-primary">Creamos</h4>
-                        <p class="text-text-muted dark:text-gray-400 font-light">Seleccionamos materiales de alta
-                            calidad y diseñamos a mano.</p>
-                    </div>
-                    <div class="space-y-4">
-                        <div class="text-5xl font-cursive text-accent-pink mb-2">03</div>
-                        <h4 class="text-xl font-semibold text-primary">Entregamos</h4>
-                        <p class="text-text-muted dark:text-gray-400 font-light">Llevamos alegría hasta la puerta de su
-                            hogar en Cajamarca.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Botones al final del proceso -->
-            <div class="mt-12 flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="#testimonios"
-                    class="scroll-btn flex items-center justify-center gap-2 rounded-full bg-accent-pink px-7 py-3.5 text-base font-semibold text-white shadow-lg transition-all hover:bg-accent-pink/90">
-                    <span class="material-symbols-outlined text-lg">forum</span>
-                    Ver Testimonios
-                </a>
-                <a href="#contacto"
-                    class="scroll-btn flex items-center justify-center gap-2 rounded-full border-2 border-accent-pink/30 bg-transparent px-7 py-3.5 text-base font-semibold text-accent-pink transition-all hover:bg-accent-pink/5">
-                    <span class="material-symbols-outlined text-lg">call</span>
-                    Contactar
-                </a>
-            </div>
+  </div>
+  <div class="relative flex min-h-screen w-full flex-col overflow-x-hidden">
+<!-- ==================== HEADER ==================== -->
+<header id="main-header"
+  class="fixed top-0 left-0 z-50 w-full transition-all duration-300">
+  <div class="mx-auto max-w-[1440px] px-5 sm:px-8 lg:px-12 xl:px-14">
+    <!-- FILA PRINCIPAL -->
+    <div
+      class="flex min-h-[88px] items-center justify-between gap-4
+             md:grid md:min-h-[104px] md:grid-cols-[1fr_auto_1fr]
+             md:items-center md:gap-6">
+      <!-- ==================== LOGO ==================== -->
+      <div class="flex items-center justify-start">
+        <a
+          href="#hero"
+          class="inline-flex items-center shrink-0"
+          aria-label="Ir al inicio"
+        >
+          <img
+            src="assets/img/logo_detallesbelis.png"
+            alt="Detalles Belis"
+            class="header-logo w-auto object-contain"
+          />
+        </a>
+      </div>
+      <!-- ==================== NAVEGACIÓN DESKTOP ==================== -->
+      <nav
+        class="hidden md:flex items-center justify-center gap-5 lg:gap-7 xl:gap-9"
+        aria-label="Navegación principal"
+      >
+        <a
+          href="#hero"
+          class="nav-link active text-sm font-semibold whitespace-nowrap"
+        >
+          Inicio
+        </a>
+        <a
+          href="#nosotros"
+          class="nav-link text-sm font-semibold whitespace-nowrap"
+        >
+          Nosotros
+        </a>
+        <a
+          href="#catalogo"
+          class="nav-link text-sm font-semibold whitespace-nowrap"
+        >
+          Catálogo
+        </a>
+        <a
+          href="#crea-tu-regalo"
+          class="nav-link text-sm font-semibold whitespace-nowrap"
+        >
+          Crea tu regalo
+        </a>
+        <a
+          href="#testimonios"
+          class="nav-link text-sm font-semibold whitespace-nowrap"
+        >
+          Testimonios
+        </a>
+        <a
+          href="#contacto"
+          class="nav-link text-sm font-semibold whitespace-nowrap"
+        >
+          Contacto
+        </a>
+      </nav>
+      <!-- ==================== ACCIONES DERECHA ==================== -->
+      <div class="flex items-center justify-end gap-2 sm:gap-3">
+        <!-- Tema desktop -->
+        <button
+          id="theme-toggle"
+          type="button"
+          class="hidden md:flex h-10 w-10 items-center justify-center rounded-full transition-colors"
+          aria-label="Cambiar tema"
+        >
+          <span
+            id="theme-icon"
+            class="material-symbols-outlined text-xl"
+          >
+            dark_mode
+          </span>
+        </button>
+        <!-- CTA desktop -->
+        <a
+          href="#contacto"
+          class="hidden md:inline-flex items-center justify-center
+                 rounded-full bg-belis-primary
+                 px-6 py-3
+                 text-sm font-bold
+                 shadow-belis-pink
+                 transition-all
+                 hover:bg-belis-hover
+                 hover:shadow-belis-md
+                 active:scale-95
+                 whitespace-nowrap"
+        >
+          Cotiza tu detalle
+        </a>
+        <!-- Menú móvil -->
+        <button
+          id="mobile-menu-button"
+          type="button"
+          class="md:hidden flex h-11 w-11 items-center justify-center
+                 rounded-full transition-colors"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <span class="material-symbols-outlined text-2xl">
+            menu
+          </span>
+        </button>
+      </div>
     </div>
-
-    </section>
-    <!-- Ocasiones Especiales Section -->
-    <section id="ocasiones" class="py-20 bg-white dark:bg-background-dark">
-        <div class="max-w-[1200px] mx-auto px-6">
-            <div class="text-center mb-16 space-y-4">
-                <div class="flex items-center justify-center gap-2">
-                    <span class="h-px w-8 bg-accent-pink"></span>
-                    <span class="text-accent-pink font-bold text-sm uppercase tracking-widest">Momentos
-                        Especiales</span>
-                    <span class="h-px w-8 bg-accent-pink"></span>
-                </div>
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary dark:text-white">Detalles para Cada
-                    Ocasión</h2>
-                <p class="text-text-muted text-lg max-w-2xl mx-auto">
-                    Encuentra el regalo perfecto para cada etapa de la vida. Personalizamos cada detalle para que tu
-                    sorpresa sea inolvidable.
-                </p>
+    <!-- ==================== MENÚ MÓVIL ==================== -->
+    <div
+      id="mobile-menu"
+      class="md:hidden hidden"
+    >
+      <nav
+        class="flex flex-col"
+        aria-label="Navegación móvil"
+      >
+        <a
+          href="#hero"
+          class="nav-link mobile-nav-link py-3 text-base font-semibold text-center"
+        >
+          Inicio
+        </a>
+        <a
+          href="#nosotros"
+          class="nav-link mobile-nav-link py-3 text-base font-semibold text-center"
+        >
+          Nosotros
+        </a>
+        <a
+          href="#catalogo"
+          class="nav-link mobile-nav-link py-3 text-base font-semibold text-center"
+        >
+          Catálogo
+        </a>
+        <a
+          href="#crea-tu-regalo"
+          class="nav-link mobile-nav-link py-3 text-base font-semibold text-center"
+        >
+          Crea tu regalo
+        </a>
+        <a
+          href="#testimonios"
+          class="nav-link mobile-nav-link py-3 text-base font-semibold text-center"
+        >
+          Testimonios
+        </a>
+        <a
+          href="#contacto"
+          class="nav-link mobile-nav-link py-3 text-base font-semibold text-center"
+        >
+          Contacto
+        </a>
+      </nav>
+      <!-- Acciones menú móvil -->
+      <div class="mobile-menu-actions flex items-center justify-between gap-3">
+        <button
+          id="theme-toggle-mobile"
+          type="button"
+          class="flex items-center gap-2 rounded-full px-3 py-2 transition-colors"
+        >
+          <span
+            id="theme-icon-mobile"
+            class="material-symbols-outlined text-xl"
+          >
+            dark_mode
+          </span>
+          <span class="text-sm font-medium">
+            Tema
+          </span>
+        </button>
+        <a
+          href="#contacto"
+          class="rounded-full bg-belis-primary
+                 px-5 py-3
+                 text-sm font-bold
+                 shadow-belis-pink
+                 transition-all
+                 hover:bg-belis-hover"
+        >
+          Cotiza tu detalle
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+    <!-- ==================== HERO ==================== -->
+    <section id="hero" class="relative pt-32 sm:pt-36 md:pt-40 lg:pt-44 pb-16 md:pb-24 overflow-hidden">
+      <div class="absolute inset-0 pointer-events-none hero-gradient"></div>
+      <div class="container mx-auto max-w-[1200px] px-4 md:px-6 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div class="order-2 lg:order-1 relative">
+            <div class="relative aspect-[4/5] w-full overflow-hidden rounded-belis-lg shadow-belis-md">
+              <div class="absolute inset-0 bg-gradient-to-t from-belis-primary/20 to-transparent z-10"></div>
+              <div class="h-full w-full bg-[url('https://images.unsplash.com/photo-1526047932273-341f2a7631f9?q=80&w=2000&auto=format&fit=crop')] bg-cover bg-center transform hover:scale-105 transition-transform duration-700"></div>
             </div>
-
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                <!-- Cumpleaños -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-accent-pink/10 text-accent-pink flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">cake</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Cumpleaños</h3>
-                    <p class="text-sm text-text-muted">Celebra un año más de vida con dulzura.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- Aniversarios -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">favorite</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Aniversarios</h3>
-                    <p class="text-sm text-text-muted">Recordando el día que todo comenzó.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- San Valentín -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-accent-pink/10 text-accent-pink flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">volunteer_activism</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">San Valentín</h3>
-                    <p class="text-sm text-text-muted">El amor se demuestra en los pequeños detalles.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- Graduaciones -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">school</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Graduaciones</h3>
-                    <p class="text-sm text-text-muted">Honra el esfuerzo y el éxito alcanzado.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- Día de la Madre -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-accent-pink/10 text-accent-pink flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">local_florist</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Día de la Madre</h3>
-                    <p class="text-sm text-text-muted">Porque mamá se merece lo mejor del mundo.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- Nacimientos -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-primary/10 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">child_care</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Nacimientos</h3>
-                    <p class="text-sm text-text-muted">Damos la bienvenida al nuevo integrante.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- Agradecimiento -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-accent-pink/10 text-accent-pink flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">sentiment_satisfied</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Agradecimiento</h3>
-                    <p class="text-sm text-text-muted">Un pequeño gesto para decir "Gracias".</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
-
-                <!-- Corporativos -->
-                <div
-                    class="occasion-card group relative overflow-hidden bg-background-light dark:bg-background-dark/50 p-8 rounded-2xl border border-primary/10 hover:border-accent-pink/30 shadow-sm hover:shadow-xl transition-all duration-500 cursor-pointer flex flex-col items-center text-center">
-                    <div
-                        class="w-16 h-16 rounded-2xl bg-background-light dark:bg-gray-800 text-primary flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-500">
-                        <span class="material-symbols-outlined text-3xl">business_center</span>
-                    </div>
-                    <h3 class="font-serif text-xl font-bold mb-2 text-primary dark:text-white">Corporativos</h3>
-                    <p class="text-sm text-text-muted">Regalos profesionales para tus clientes.</p>
-                    <div
-                        class="mt-6 opacity-0 group-hover:opacity-100 transition-opacity flex items-center gap-1 text-xs font-bold uppercase text-accent-pink">
-                        Ver Detalles <span class="material-symbols-outlined text-sm">arrow_forward</span>
-                    </div>
-                </div>
+            <div class="absolute -bottom-4 -right-4 bg-belis-primary text-text-light rounded-full px-4 py-2 shadow-belis-pink flex items-center gap-2">
+              <span class="material-symbols-outlined text-base">auto_awesome</span>
+              <span class="text-xs md:text-sm font-bold">Diseñado con amor</span>
             </div>
-
-            <!-- CTA Ocasiones -->
-            <div
-                class="mt-24 bg-gradient-to-r from-primary to-accent-pink rounded-3xl p-12 text-white relative overflow-hidden shadow-2xl shadow-primary/20">
-                <div class="relative z-10 max-w-2xl">
-                    <h2 class="font-serif text-4xl font-bold mb-4">¿Buscas algo totalmente único?</h2>
-                    <p class="text-white/90 text-lg mb-8 leading-relaxed">
-                        En Detalles Beli's, nos especializamos en personalizar cada regalo según los gustos de esa
-                        persona especial. Hacemos envíos en todo Cajamarca.
-                    </p>
-                    <button
-                        class="whatsapp-btn bg-white text-primary px-8 py-4 rounded-full font-bold hover:bg-gray-50 transition-all flex items-center gap-2 group">
-                        Contáctanos por WhatsApp
-                        <span
-                            class="material-symbols-outlined group-hover:translate-x-1 transition-transform">chat</span>
-                    </button>
-                </div>
-                <div class="absolute -top-10 -right-10 w-64 h-64 bg-white/10 rounded-full blur-3xl"></div>
-                <div class="absolute -bottom-10 right-20 w-48 h-48 bg-primary/20 rounded-full blur-2xl"></div>
+          </div>
+          <div class="order-1 lg:order-2 text-center lg:text-left">
+            <span class="inline-block rounded-full bg-belis-soft px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-belis-dark border border-belis-primary/30 shadow-belis-sm">
+              Hecho Especial Para Ti
+            </span>
+            <h1 class="font-serif text-5xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[1.15] mt-4 text-text">
+              Regala <span class="text-belis-primary">amor y dulzura</span> en cada detalle
+            </h1>
+            <p class="mt-4 md:mt-6 text-base md:text-lg text-text-secondary max-w-md mx-auto lg:mx-0 leading-relaxed px-2 sm:px-0">
+              Creamos regalos personalizados para convertir una ocasión especial en un recuerdo que se siente y permanece.
+            </p>
+            <div class="mt-6 md:mt-8 flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start">
+              <a href="#catalogo" class="scroll-btn group flex items-center justify-center gap-2 rounded-full bg-belis-primary px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-bold text-text-light shadow-belis-pink hover:shadow-belis-md hover:bg-belis-hover transition-all active:scale-95 w-full sm:w-auto">
+                <span class="material-symbols-outlined text-lg group-hover:rotate-12 transition-transform">local_florist</span>
+                Ver Catálogo
+              </a>
+              <a href="#crea-tu-regalo" class="scroll-btn flex items-center justify-center gap-2 rounded-full border-2 border-belis-primary/40 px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-bold text-belis-primary transition-all hover:bg-belis-soft/50 hover:border-belis-primary w-full sm:w-auto">
+                <span class="material-symbols-outlined text-lg">favorite</span>
+                Crea tu regalo
+              </a>
             </div>
+            <div class="mt-8 md:mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-x-5 gap-y-2 text-xs md:text-sm text-text-secondary">
+              <span class="inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-belis-primary">volunteer_activism</span>
+                Hecho a mano
+              </span>
+              <span class="h-4 w-px bg-border-light hidden sm:block"></span>
+              <span class="inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-belis-primary">auto_awesome</span>
+                Personalizado
+              </span>
+              <span class="h-4 w-px bg-border-light hidden sm:block"></span>
+              <span class="inline-flex items-center gap-2">
+                <span class="material-symbols-outlined text-base text-belis-primary">verified</span>
+                Cuidado en cada etapa
+              </span>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Testimonios Section -->
-    <section id="testimonios" class="py-20 bg-background-light/50 dark:bg-background-dark/50">
-        <div class="max-w-[1200px] mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">Historias que Enamoran</h2>
-                <p class="text-text-muted italic font-medium max-w-2xl mx-auto">Momentos especiales creados en el
-                    corazón de Cajamarca</p>
+    <!-- ==================== NOSOTROS ==================== -->
+    <section id="nosotros" class="py-16 md:py-20 lg:py-28 bg-background-card dark:bg-background-dark/80">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div>
+            <div class="flex items-center gap-2 mb-4">
+              <span class="h-px w-8 bg-belis-primary"></span>
+              <span class="text-belis-dark text-sm font-bold uppercase tracking-widest">La esencia de regalar</span>
             </div>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Testimonio 1 -->
-                <div class="testimonial-card flex flex-col">
-                    <div
-                        class="bg-white dark:bg-[#1E1B24] p-8 rounded-2xl shadow-xl shadow-primary/5 speech-bubble-tail mb-6 border border-primary/10">
-                        <div class="flex gap-1 mb-4 text-amber-400">
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                        </div>
-                        <p class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed">
-                            "Quedé maravillada con el detalle. Se nota el amor y la dedicación que le ponen a cada
-                            cajita. ¡A mi esposo le encantó la sorpresa!"
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-4 px-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md">
-                            M
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-primary">María Fernanda R.</h4>
-                            <p class="text-xs text-text-muted uppercase tracking-widest">Desde Cajamarca Centro</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonio 2 -->
-                <div class="testimonial-card flex flex-col">
-                    <div
-                        class="bg-white dark:bg-[#1E1B24] p-8 rounded-2xl shadow-xl shadow-primary/5 speech-bubble-tail mb-6 border border-primary/10">
-                        <div class="flex gap-1 mb-4 text-amber-400">
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                        </div>
-                        <p class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed">
-                            "Excelente servicio. La atención personalizada de Beli es de lo mejor, me ayudó a elegir el
-                            regalo perfecto para mi aniversario."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-4 px-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-accent-pink flex items-center justify-center text-white font-bold text-xl shadow-md">
-                            J
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-primary">Juan Carlos P.</h4>
-                            <p class="text-xs text-text-muted uppercase tracking-widest">Desde Lima</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Testimonio 3 -->
-                <div class="testimonial-card flex flex-col">
-                    <div
-                        class="bg-white dark:bg-[#1E1B24] p-8 rounded-2xl shadow-xl shadow-primary/5 speech-bubble-tail mb-6 border border-primary/10">
-                        <div class="flex gap-1 mb-4 text-amber-400">
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                            <span class="material-symbols-outlined">star</span>
-                        </div>
-                        <p class="text-lg italic text-slate-700 dark:text-slate-300 leading-relaxed">
-                            "Deliciosos desayunos y una presentación impecable. Gracias por ayudarme a estar presente,
-                            aun desde lejos."
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-4 px-4">
-                        <div
-                            class="w-12 h-12 rounded-full bg-primary flex items-center justify-center text-white font-bold text-xl shadow-md">
-                            L
-                        </div>
-                        <div>
-                            <h4 class="font-bold text-primary">Lucía G.</h4>
-                            <p class="text-xs text-text-muted uppercase tracking-widest">Desde Baños del Inca</p>
-                        </div>
-                    </div>
-                </div>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl leading-tight font-bold text-text">
+              Pequeños detalles. Grandes emociones.
+            </h2>
+            <div class="mt-4 md:mt-6 space-y-4 text-text-secondary leading-relaxed text-sm md:text-base">
+              <p>En Detalles Belis creemos que un buen regalo no necesita decirlo todo: basta con que se sienta pensado para esa persona. Por eso creamos piezas personalizadas que convierten una intención en algo que puede verse, tocarse y recordar.</p>
+              <p>Elegimos cada elemento con cuidado, desde la combinación de colores hasta la presentación final, para que abrir el regalo sea parte de una experiencia especial.</p>
             </div>
-
-            <!-- CTA Testimonios -->
-            <div class="mt-20 text-center">
-                <div
-                    class="bg-primary/5 dark:bg-primary/10 rounded-3xl p-12 border border-primary/10 hover:shadow-xl transition-all duration-300">
-                    <h2 class="font-cursive text-5xl text-primary mb-6">¿Listo para crear tu propia historia?</h2>
-                    <p class="text-text-muted max-w-2xl mx-auto mb-10 text-lg">
-                        Personalizamos cada detalle para que tu regalo sea inolvidable. Cuéntanos tu idea y nosotros la
-                        hacemos realidad.
-                    </p>
-                    <div class="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                        <button
-                            class="whatsapp-btn bg-primary hover:bg-primary/90 text-white font-bold py-4 px-10 rounded-full shadow-lg shadow-primary/30 transition-all hover:-translate-y-1 flex items-center gap-2">
-                            <span class="material-symbols-outlined">chat</span>
-                            Cuentanos tu idea
-                        </button>
-                        <a href="#catalogo"
-                            class="scroll-btn bg-white dark:bg-slate-800 text-primary border-2 border-primary/20 hover:border-primary font-bold py-4 px-10 rounded-full transition-all flex items-center gap-2">
-                            Explorar Catálogo
-                        </a>
-                    </div>
-                </div>
+            <div class="grid grid-cols-2 gap-4 md:gap-6 mt-6 md:mt-8">
+              <div>
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-belis-primary">volunteer_activism</span>
+                <p class="font-bold text-text mt-1">Hecho a mano</p>
+                <p class="text-sm text-text-secondary">Cuidado en cada etapa</p>
+              </div>
+              <div>
+                <span class="material-symbols-outlined text-2xl md:text-3xl text-belis-primary">local_shipping</span>
+                <p class="font-bold text-text mt-1">Presentación cuidada</p>
+                <p class="text-sm text-text-secondary">Listo para sorprender</p>
+              </div>
             </div>
+            <div class="mt-8 md:mt-10">
+              <a href="#catalogo" class="inline-flex items-center gap-2 text-belis-primary font-bold hover:gap-3 transition-all">
+                Ver nuestro catálogo
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -top-4 -right-4 w-32 md:w-48 h-32 md:h-48 bg-belis-soft rounded-full -z-10"></div>
+            <div class="relative rounded-belis-lg overflow-hidden shadow-belis-md border-4 md:border-8 border-background-card dark:border-background-dark/30">
+              <div class="aspect-[4/5] bg-cover bg-center transform hover:scale-105 transition-transform duration-700" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCGl31hKQNY8P2bUR2mgOLdT2fnbaEWEBiYKMALI37HJwxa5Luu00EoARMKHlGtk_BSeEvQL3awMpsWI1SisPjsdFeKnhdYqeBh3L06-Ls76wROv_bT-AP2M0TU7PlfoapMEgKDPl5a9P0akJCkrlSna3y2dxRLqZzeVD_6piz1-TvCxAzNDVeVe_tXRpqwL35hFucOj3V-jsjhqXu5fnnk7Zehb1SfWBVZtYRqd_f2cnCfG5dKETBG9qrW8s4bHXvRiezFcqrVRww');"></div>
+              <div class="absolute bottom-0 left-0 right-0 p-4 md:p-6 bg-gradient-to-t from-black/60 to-transparent">
+                <p class="text-text-light text-xs md:text-sm italic font-cursive">"Cada elección suma. Cada detalle transforma el momento."</p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
-
-    <!-- Contacto Section -->
-    <section id="contacto" class="py-20 bg-white dark:bg-background-dark">
-        <div class="max-w-[1200px] mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 class="font-serif text-4xl md:text-5xl font-bold text-primary mb-4">Contáctanos</h2>
-                <p class="text-text-muted text-lg max-w-2xl mx-auto">Estamos aquí para ayudarte a crear el regalo
-                    perfecto</p>
-            </div>
-
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <!-- Contact Form - Envío directo a WhatsApp -->
-                <div class="bg-background-light dark:bg-background-dark/50 rounded-2xl p-8 shadow-lg">
-                    <h3 class="text-2xl font-bold text-primary mb-6">Solicita tu cotización</h3>
-
-                    <div class="space-y-6">
-                        <!-- Campos del formulario sin action ni method -->
-                        <div>
-                            <label class="block text-sm font-medium text-text-muted mb-2">Nombre completo</label>
-                            <input type="text" id="nombre"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                                placeholder="Ej: María Pérez" required>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-muted mb-2">Correo electrónico *</label>
-                            <input type="email" id="email"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                                placeholder="ejemplo@correo.com" required>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-muted mb-2">Teléfono *</label>
-                            <input type="tel" id="telefono"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                                placeholder="Ej: 987654321" required>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-muted mb-2">Tipo de regalo *</label>
-                            <select id="tipo_regalo"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                                required>
-                                <option value="">Selecciona una opción</option>
-                                <option value="Rosas eternas">Rosas eternas</option>
-                                <option value="Box personalizado">Box personalizado</option>
-                                <option value="Detalle en crochet">Detalle en crochet</option>
-                                <option value="Carta personalizada">Carta personalizada</option>
-                                <option value="Chocolates gourmet">Chocolates gourmet</option>
-                                <option value="Peluche premium">Peluche premium</option>
-                                <option value="Otro">Otro</option>
-                            </select>
-                        </div>
-
-                        <div>
-                            <label class="block text-sm font-medium text-text-muted mb-2">Mensaje adicional</label>
-                            <textarea id="mensaje" rows="4"
-                                class="w-full px-4 py-3 rounded-lg border border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 focus:ring-2 focus:ring-primary focus:border-transparent transition-all"
-                                placeholder="Cuéntanos más detalles sobre lo que buscas..."></textarea>
-                        </div>
-
-                        <!-- Botón que envía a WhatsApp -->
-                        <button onclick="enviarWhatsApp()"
-                            class="w-full bg-primary hover:bg-primary/90 text-white font-bold py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-2 hover:scale-[1.02]">
-                            <span class="material-symbols-outlined">chat</span>
-                            Enviar solicitud por WhatsApp
-                        </button>
-
-                        <p class="text-xs text-text-muted text-center mt-4">
-                            Al hacer clic, serás redirigido a WhatsApp con todos tus datos.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div>
-                        <h3 class="text-2xl font-bold text-primary mb-6">Información de contacto</h3>
-                        <div class="space-y-6">
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <span class="material-symbols-outlined text-primary">phone</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg">Teléfono / WhatsApp</h4>
-                                    <p class="text-text-muted">+51 998 282 536</p>
-                                    <p class="text-sm text-text-muted">Disponible también por WhatsApp</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <span class="material-symbols-outlined text-primary">mail</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg">Email</h4>
-                                    <p class="text-text-muted">detallesbelis@gmail.com</p>
-                                    <p class="text-sm text-text-muted">Para solicitudes formales</p>
-                                </div>
-                            </div>
-
-                            <div class="flex items-start gap-4">
-                                <div class="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
-                                    <span class="material-symbols-outlined text-primary">location_on</span>
-                                </div>
-                                <div>
-                                    <h4 class="font-bold text-lg">Ubicación</h4>
-                                    <p class="text-text-muted">Cajamarca, Perú</p>
-                                    <p class="text-sm text-text-muted">Realizamos envíos a toda la ciudad</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- WhatsApp Direct Button - Color principal -->
-                    <div class="bg-gradient-to-r from-primary to-primary/80 rounded-2xl p-8 text-white">
-                        <div class="flex items-start gap-4 mb-6">
-                            <div class="bg-white/20 p-3 rounded-full">
-                                <span class="material-symbols-outlined text-2xl">bolt</span>
-                            </div>
-                            <div>
-                                <h3 class="text-2xl font-bold mb-2">¿Consulta rápida?</h3>
-                                <p class="text-white/90">Escríbenos por WhatsApp para una respuesta inmediata.</p>
-                            </div>
-                        </div>
-
-                        <!-- Botón principal WhatsApp -->
-                        <a href="https://wa.me/51998282536?text=¡Hola%20Detalles%20Beli's!%20👋%0A%0AVi%20su%20página%20web%20y%20quisiera%20hacer%20una%20consulta%20sobre%20sus%20productos%20personalizados.%0A%0A¿Podrían%20ayudarme?"
-                            target="_blank"
-                            class="w-full bg-white text-primary hover:bg-gray-100 font-bold py-4 px-8 rounded-lg transition-all flex items-center justify-center gap-2 hover:scale-[1.02] mb-4">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-6 h-6">
-                                <path fill="currentColor"
-                                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.173.198-.297.298-.496.099-.199.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.76.982.998-3.675-.236-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.004 5.45-4.438 9.88-9.888 9.88m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.333.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.333 11.893-11.893 0-3.18-1.24-6.162-3.495-8.411" />
-                            </svg>
-                            <span class="text-primary">Consulta Rápida por WhatsApp</span>
-                        </a>
-
-                        <!-- Botones de consultas comunes -->
-                        <div class="space-y-2">
-                            <p class="text-white/80 text-sm mb-2">Consultas comunes:</p>
-
-                            <a href="https://wa.me/51998282536?text=¡Hola%20Beli's!%20👋%0A%0AQuisiera%20saber%20los%20precios%20de%20sus%20productos%20personalizados."
-                                target="_blank"
-                                class="block w-full text-left bg-white/10 hover:bg-white/20 text-white text-sm py-2 px-4 rounded-lg transition-all">
-                                - Consultar precios
-                            </a>
-
-                            <a href="https://wa.me/51998282536?text=¡Hola%20Beli's!%20👋%0A%0A¿Cuál%20es%20el%20tiempo%20de%20entrega%20aproximado%20para%20los%20regalos%20personalizados?"
-                                target="_blank"
-                                class="block w-full text-left bg-white/10 hover:bg-white/20 text-white text-sm py-2 px-4 rounded-lg transition-all">
-                                - Tiempo de entrega
-                            </a>
-
-                            <a href="https://wa.me/51998282536?text=¡Hola%20Beli's!%20👋%0A%0AMe%20interesa%20saber%20qué%20opciones%20de%20personalización%20ofrecen%20para%20los%20regalos."
-                                target="_blank"
-                                class="block w-full text-left bg-white/10 hover:bg-white/20 text-white text-sm py-2 px-4 rounded-lg transition-all">
-                                - Opciones de personalización
-                            </a>
-                        </div>
-
-                        <p class="text-xs text-white/80 mt-4 pt-4 border-t border-white/20">
-                            Horario de atención: Lunes a Sábado 9:00 AM - 8:00 PM
-                        </p>
-                    </div>
-
-                    <!-- Redes Sociales -->
-                    <div>
-                        <h4 class="font-bold text-lg mb-4">Síguenos en redes sociales</h4>
-                        <div class="flex gap-3">
-                            <!-- Facebook -->
-                            <a href="#" target="_blank"
-                                class="social-icon w-10 h-10 rounded-full bg-primary/10 dark:bg-white/5 flex items-center justify-center text-primary hover:bg-[#1877F2] hover:text-white transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                </svg>
-                            </a>
-                            <!-- Instagram -->
-                            <a href="https://www.instagram.com/belis_pe/" target="_blank"
-                                class="social-icon w-10 h-10 rounded-full bg-primary/10 dark:bg-white/5 flex items-center justify-center text-primary hover:bg-gradient-to-r hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCAF45] hover:text-white transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                                </svg>
-                            </a>
-                            <!-- TikTok -->
-                            <a href="#" target="_blank"
-                                class="social-icon w-10 h-10 rounded-full bg-primary/10 dark:bg-white/5 flex items-center justify-center text-primary hover:bg-black hover:text-white transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <!-- ==================== STATS ==================== -->
+    <section id="stats" class="py-10 md:py-12 bg-background-secondary dark:bg-background-dark/40">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 md:gap-6">
+          <div class="text-center p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm">
+            <p class="text-xs md:text-sm text-text-muted uppercase tracking-wider">Regalos entregados</p>
+            <p class="text-xl md:text-4xl font-extrabold text-belis-primary">
+              <span id="stat-regalos" data-target="300">0</span>
+            </p>
+          </div>
+          <div class="text-center p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm">
+            <p class="text-xs md:text-sm text-text-muted uppercase tracking-wider">Clientes felices</p>
+            <p class="text-xl md:text-4xl font-extrabold text-belis-primary">
+              <span id="stat-clientes" data-target="100">0</span>%
+            </p>
+          </div>
+          <div class="text-center p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm">
+            <p class="text-xs md:text-sm text-text-muted uppercase tracking-wider">Años de experiencia</p>
+            <p class="text-xl md:text-4xl font-extrabold text-belis-primary">
+              <span id="stat-experiencia" data-target="5">0</span>+
+            </p>
+          </div>
         </div>
+      </div>
     </section>
-    <!-- Footer -->
-    <footer
-        class="bg-background-light dark:bg-background-dark border-t border-[#edebef] dark:border-white/10 pt-16 pb-8">
-        <div class="container mx-auto max-w-[1200px] px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <!-- Columna 1: Logo y Descripción -->
-                <div class="space-y-6">
-                    <div class="flex items-center">
-                        <img src="img/logo_belis_pe.png" alt="Detalles Beli's Logo" class="h-14 w-auto object-contain">
-                    </div>
-                    <p class="text-sm text-text-muted dark:text-gray-400 leading-relaxed">
-                        Transformamos sentimientos en detalles inolvidables. Especialistas en regalos personalizados
-                        hechos a mano con amor.
-                    </p>
+    <!-- ==================== CATÁLOGO ==================== -->
+    <section id="catalogo" class="py-16 md:py-20 bg-background-card dark:bg-background-dark/80">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="text-center mb-10 md:mb-16">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="h-px w-8 bg-belis-primary"></span>
+            <span class="text-belis-dark text-sm font-bold uppercase tracking-widest">Nuestra colección</span>
+            <span class="h-px w-8 bg-belis-primary"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-text">Detalles que hacen la diferencia</h2>
+          <p class="mt-2 md:mt-4 text-text-secondary max-w-2xl mx-auto text-sm md:text-base">Explora una selección de regalos que puedes hacer tan especial como la ocasión: delicados, personalizados y pensados para emocionar.</p>
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+          <!-- Producto 1 -->
+          <div class="card group bg-background-card dark:bg-background-dark/50 rounded-belis-lg overflow-hidden shadow-belis-sm hover:shadow-belis-md transition-all duration-300 hover:-translate-y-2 border border-border-light dark:border-border">
+            <div class="aspect-[4/5] overflow-hidden cursor-zoom-in image-trigger" onclick="openModal(this)">
+              <img loading="lazy" decoding="async" src="assets/img/flores_eternas.png" alt="Rosas Eternas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="p-4 md:p-6 text-center">
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-text">Rosas Eternas</h3>
+              <p class="text-text-secondary text-sm mt-2">Un clásico elegante para expresar cariño con un toque especial.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-belis-dark/80">Personalizable</p>
+            </div>
+          </div>
+          <!-- Producto 2 -->
+          <div class="card group bg-background-card dark:bg-background-dark/50 rounded-belis-lg overflow-hidden shadow-belis-sm hover:shadow-belis-md transition-all duration-300 hover:-translate-y-2 border border-border-light dark:border-border">
+            <div class="aspect-[4/5] overflow-hidden cursor-zoom-in image-trigger" onclick="openModal(this)">
+              <img loading="lazy" decoding="async" src="assets/img/boxes_personalizados.png" alt="Boxes Personalizados" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="p-4 md:p-6 text-center">
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-text">Boxes Personalizados</h3>
+              <p class="text-text-secondary text-sm mt-2">Una composición hecha a medida para combinar recuerdos, gustos y pequeños detalles.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-belis-dark/80">Personalizable</p>
+            </div>
+          </div>
+          <!-- Producto 3 -->
+          <div class="card group bg-background-card dark:bg-background-dark/50 rounded-belis-lg overflow-hidden shadow-belis-sm hover:shadow-belis-md transition-all duration-300 hover:-translate-y-2 border border-border-light dark:border-border">
+            <div class="aspect-[4/5] overflow-hidden cursor-zoom-in image-trigger" onclick="openModal(this)">
+              <img loading="lazy" decoding="async" src="assets/img/peluches_premium.png" alt="Peluches Premium" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="p-4 md:p-6 text-center">
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-text">Peluches Premium</h3>
+              <p class="text-text-secondary text-sm mt-2">Un detalle cálido y especial para acompañar a quien quieres.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-belis-dark/80">Personalizable</p>
+            </div>
+          </div>
+          <!-- Producto 4 -->
+          <div class="card group bg-background-card dark:bg-background-dark/50 rounded-belis-lg overflow-hidden shadow-belis-sm hover:shadow-belis-md transition-all duration-300 hover:-translate-y-2 border border-border-light dark:border-border">
+            <div class="aspect-[4/5] overflow-hidden cursor-zoom-in image-trigger" onclick="openModal(this)">
+              <img loading="lazy" decoding="async" src="assets/img/cartas_personalizadas.png" alt="Cartas Personalizadas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="p-4 md:p-6 text-center">
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-text">Cartas Personalizadas</h3>
+              <p class="text-text-secondary text-sm mt-2">Un mensaje especial convertido en un recuerdo para conservar.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-belis-dark/80">Personalizable</p>
+            </div>
+          </div>
+          <!-- Producto 5 -->
+          <div class="card group bg-background-card dark:bg-background-dark/50 rounded-belis-lg overflow-hidden shadow-belis-sm hover:shadow-belis-md transition-all duration-300 hover:-translate-y-2 border border-border-light dark:border-border">
+            <div class="aspect-[4/5] overflow-hidden cursor-zoom-in image-trigger" onclick="openModal(this)">
+              <img loading="lazy" decoding="async" src="assets/img/chocolates.png" alt="Chocolates Gourmet" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="p-4 md:p-6 text-center">
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-text">Chocolates Gourmet</h3>
+              <p class="text-text-secondary text-sm mt-2">Una propuesta dulce para celebrar con una presentación que también sorprende.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-belis-dark/80">Personalizable</p>
+            </div>
+          </div>
+          <!-- Producto 6 -->
+          <div class="card group bg-background-card dark:bg-background-dark/50 rounded-belis-lg overflow-hidden shadow-belis-sm hover:shadow-belis-md transition-all duration-300 hover:-translate-y-2 border border-border-light dark:border-border">
+            <div class="aspect-[4/5] overflow-hidden cursor-zoom-in image-trigger" onclick="openModal(this)">
+              <img loading="lazy" decoding="async" src="assets/img/cajas_personalizadas.png" alt="Cajas Personalizadas" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            </div>
+            <div class="p-4 md:p-6 text-center">
+              <h3 class="font-serif text-xl md:text-2xl font-bold text-text">Cajas Personalizadas</h3>
+              <p class="text-text-secondary text-sm mt-2">Una base versátil para crear una composición que se sienta completamente tuya.</p>
+              <p class="mt-4 text-xs font-semibold uppercase tracking-[0.18em] text-belis-dark/80">Personalizable</p>
+            </div>
+          </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal-overlay" id="imageModal">
+          <div class="modal-content">
+            <button class="close-modal" id="closeModal" aria-label="Cerrar">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+              </svg>
+            </button>
+            <img src="" alt="Imagen ampliada" id="modalImage" />
+          </div>
+        </div>
+        <div class="mt-10 md:mt-12 text-center">
+          <a href="#crea-tu-regalo" class="scroll-btn inline-flex items-center justify-center gap-2 rounded-full bg-belis-primary px-5 md:px-9 py-3 md:py-4 text-sm md:text-base font-bold text-text-light shadow-belis-pink hover:shadow-belis-md hover:bg-belis-hover transition-all w-full sm:w-auto">
+            <span class="material-symbols-outlined text-lg">brush</span>
+            Personaliza tu regalo
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== CREA TU REGALO ==================== -->
+    <section id="crea-tu-regalo" class="py-16 md:py-20 bg-background-secondary dark:bg-background-dark/40">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="text-center mb-10 md:mb-16">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="h-px w-8 bg-belis-primary"></span>
+            <span class="text-belis-dark text-sm font-bold uppercase tracking-widest">Hecho a tu manera</span>
+            <span class="h-px w-8 bg-belis-primary"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-text">Tu idea, convertida en un detalle único</h2>
+          <p class="mt-2 md:mt-4 text-text-secondary max-w-2xl mx-auto text-sm md:text-base">Cuéntanos qué quieres celebrar y qué te gustaría transmitir. Nosotros nos encargamos de convertir esa idea en una propuesta especial.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center">
+          <div class="space-y-6 md:space-y-8">
+            <div class="flex gap-4 md:gap-6 items-start">
+              <div class="bg-belis-soft rounded-full p-3 text-belis-dark text-xl md:text-2xl font-bold w-10 h-10 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">1</div>
+              <div>
+                <h3 class="text-lg md:text-xl font-bold text-text">Cuéntanos la idea</h3>
+                <p class="text-text-secondary text-sm md:text-base">Puedes partir de una de nuestras propuestas o contarnos exactamente qué imaginas.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 md:gap-6 items-start">
+              <div class="bg-belis-soft rounded-full p-3 text-belis-dark text-xl md:text-2xl font-bold w-10 h-10 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">2</div>
+              <div>
+                <h3 class="text-lg md:text-xl font-bold text-text">Hazlo personal</h3>
+                <p class="text-text-secondary text-sm md:text-base">Elige colores, mensajes, fotos y esos pequeños elementos que harán que el regalo sea solo para esa persona.</p>
+              </div>
+            </div>
+            <div class="flex gap-4 md:gap-6 items-start">
+              <div class="bg-belis-soft rounded-full p-3 text-belis-dark text-xl md:text-2xl font-bold w-10 h-10 md:w-12 md:h-12 flex items-center justify-center flex-shrink-0">3</div>
+              <div>
+                <h3 class="text-lg md:text-xl font-bold text-text">Nosotros cuidamos el resto</h3>
+                <p class="text-text-secondary text-sm md:text-base">Preparamos cada pedido con atención para que el resultado final esté listo para sorprender.</p>
+              </div>
+            </div>
+            <div class="flex justify-center lg:justify-start">
+              <a href="#contacto" class="scroll-btn inline-flex items-center justify-center gap-2 rounded-full bg-belis-primary px-5 md:px-8 py-3 md:py-4 text-sm md:text-base font-bold text-text-light shadow-belis-pink hover:shadow-belis-md hover:bg-belis-hover transition-all w-full sm:w-auto">
+                <span class="material-symbols-outlined">brush</span>
+                Cotiza mi detalle
+              </a>
+            </div>
+          </div>
+          <div class="relative">
+            <div class="absolute -top-6 -left-6 w-32 md:w-48 h-32 md:h-48 bg-belis-soft/60 rounded-full -z-10"></div>
+            <div class="rounded-belis-lg overflow-hidden shadow-belis-md border-4 md:border-8 border-background-card dark:border-background-dark/30">
+              <img loading="lazy" decoding="async" src="assets/img/boxes_personalizados.png" alt="Regalo personalizado" class="w-full h-auto object-cover" />
+            </div>
+            <div class="absolute -bottom-4 -right-4 bg-background-card dark:bg-background-dark/80 rounded-belis px-4 md:px-6 py-2 md:py-3 shadow-belis-sm border border-border-light dark:border-border">
+              <p class="font-cursive text-belis-primary text-sm md:text-lg">"Lo que hace especial un regalo es lo que dice de ti."</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== OCASIONES ==================== -->
+    <section id="ocasiones" class="py-16 md:py-20 bg-background-card dark:bg-background-dark/80">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="text-center mb-10 md:mb-16">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="h-px w-8 bg-belis-primary"></span>
+            <span class="text-belis-dark text-sm font-bold uppercase tracking-widest">Para cada ocasión</span>
+            <span class="h-px w-8 bg-belis-primary"></span>
+          </div>
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-text">Regala lo que quieres expresar</h2>
+          <p class="mt-2 md:mt-4 text-text-secondary max-w-2xl mx-auto text-sm md:text-base">Hay momentos que merecen algo más que un mensaje. Elige una idea que ayude a decir, sin tantas palabras, eso que quieres hacer sentir.</p>
+        </div>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
+          <!-- Cumpleaños -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">cake</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Cumpleaños</h3>
+            <p class="text-sm text-text-secondary mt-1">Celebra con algo que se sienta especial.</p>
+          </div>
+          <!-- Aniversarios -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">favorite</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Aniversarios</h3>
+            <p class="text-sm text-text-secondary mt-1">Un detalle para celebrar lo que comparten.</p>
+          </div>
+          <!-- San Valentín -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">volunteer_activism</span>
+            </div>
+            <h3 class="font-bold text-text text-base">San Valentín</h3>
+            <p class="text-sm text-text-secondary mt-1">Una forma bonita de decir "estoy aquí".</p>
+          </div>
+          <!-- Graduaciones -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">school</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Graduaciones</h3>
+            <p class="text-sm text-text-secondary mt-1">Reconoce un logro que merece celebrarse.</p>
+          </div>
+          <!-- Día de la Madre -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">local_florist</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Día de la Madre</h3>
+            <p class="text-sm text-text-secondary mt-1">Convierte tu agradecimiento en un recuerdo.</p>
+          </div>
+          <!-- Nacimientos -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">child_care</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Nacimientos</h3>
+            <p class="text-sm text-text-secondary mt-1">Un gesto dulce para dar la bienvenida.</p>
+          </div>
+          <!-- Agradecimiento -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-belis-soft dark:bg-belis-primary/10 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">sentiment_satisfied</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Agradecimiento</h3>
+            <p class="text-sm text-text-secondary mt-1">Porque decir gracias también merece un detalle.</p>
+          </div>
+          <!-- Corporativos -->
+          <div class="occasion-card group p-4 md:p-6 rounded-belis bg-background-card dark:bg-background-dark/50 shadow-belis-sm hover:shadow-belis-md transition-all hover:-translate-y-2 text-center border border-border-light dark:border-border hover:border-belis-primary">
+            <div class="w-12 h-12 md:w-14 md:h-14 rounded-full bg-background-secondary dark:bg-background-dark/30 flex items-center justify-center mx-auto mb-3 md:mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined text-xl md:text-2xl text-belis-primary">business_center</span>
+            </div>
+            <h3 class="font-bold text-text text-base">Corporativos</h3>
+            <p class="text-sm text-text-secondary mt-1">Propuestas cuidadas para reconocer a clientes, equipos y aliados.</p>
+          </div>
+        </div>
+        <div class="mt-10 md:mt-16 bg-gradient-to-r from-belis-primary to-belis-dark rounded-belis-lg p-6 md:p-8 text-text-light shadow-belis-md relative overflow-hidden">
+          <div class="relative z-10 text-center max-w-2xl mx-auto">
+            <h3 class="font-serif text-3xl md:text-3xl font-bold mb-2">¿Ya tienes una idea en mente?</h3>
+            <p class="text-text-light/80 text-sm md:text-base mb-4 md:mb-6">Cuéntanos la ocasión, la persona y el estilo que imaginas. Crearemos una propuesta coherente con lo que quieres transmitir.</p>
+            <div class="flex justify-center">
+              <a href="#contacto" class="scroll-btn inline-flex items-center justify-center gap-2 bg-background-card text-belis-primary px-5 md:px-8 py-3 md:py-4 rounded-full font-bold hover:bg-background-secondary transition-all shadow-belis-md text-sm md:text-base w-full sm:w-auto">
+                Crear mi detalle
+                <span class="material-symbols-outlined">arrow_forward</span>
+              </a>
+            </div>
+          </div>
+          <div class="absolute -top-10 -right-10 w-32 md:w-48 h-32 md:h-48 bg-white/10 rounded-full blur-2xl"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== BRAND BREAK ==================== -->
+    <section class="premium-divider relative overflow-hidden bg-background-card py-16 md:py-24">
+      <div class="absolute inset-0 pointer-events-none">
+        <div class="absolute -left-20 top-1/2 h-40 w-40 -translate-y-1/2 rounded-full bg-belis-soft/70 blur-3xl"></div>
+        <div class="absolute -right-20 top-1/3 h-48 w-48 rounded-full bg-belis-light/50 blur-3xl"></div>
+      </div>
+      <div class="relative mx-auto max-w-[900px] px-4 md:px-6 text-center">
+        <span class="font-cursive text-2xl text-belis-primary">Detalles que hablan por ti</span>
+        <p class="mt-4 font-serif text-3xl sm:text-4xl md:text-5xl font-semibold leading-tight text-text">
+          "No se trata solo de regalar. <span class="text-belis-dark">Se trata de hacer sentir especial a alguien.</span>"
+        </p>
+        <p class="mx-auto mt-5 max-w-2xl text-sm md:text-base leading-relaxed text-text-secondary">
+          Cada creación parte de una intención: celebrar, agradecer, acompañar o sorprender. Elegimos cada elemento para que el resultado tenga sentido, se sienta personal y deje una buena memoria.
+        </p>
+      </div>
+    </section>
+    <!-- ==================== TESTIMONIOS ==================== -->
+    <section id="testimonios" class="py-16 md:py-20 bg-background-secondary dark:bg-background-dark/40">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="text-center mb-10 md:mb-16">
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-text">Lo que dicen quienes nos eligen</h2>
+          <p class="mt-2 text-text-secondary italic text-sm md:text-base">Historias detrás de algunos de nuestros detalles</p>
+        </div>
+        <div class="testimonial-slider relative">
+          <div class="testimonial-track" id="testimonialTrack">
+            <!-- Testimonio 1 -->
+            <div class="testimonial-slide">
+              <div class="card bg-background-card dark:bg-background-dark/80 rounded-belis-lg shadow-belis-sm p-6 md:p-8 border border-border-light dark:border-border h-full">
+                <div class="flex gap-1 text-belis-primary mb-4">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
                 </div>
-                <!-- Columna 2: Enlaces rápidos -->
+                <p class="italic text-text-secondary text-sm md:text-base">"Se nota el cuidado en cada detalle. Todo llegó precioso y la sorpresa fue justo como la imaginaba."</p>
+                <div class="flex items-center gap-4 mt-6">
+                  <div class="w-10 h-10 rounded-full bg-belis-soft text-belis-dark flex items-center justify-center font-bold text-lg">M</div>
+                  <div>
+                    <p class="font-bold text-text">Cliente verificado</p>
+                    <p class="text-xs text-text-muted">Pedido personalizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 2 -->
+            <div class="testimonial-slide">
+              <div class="card bg-background-card dark:bg-background-dark/80 rounded-belis-lg shadow-belis-sm p-6 md:p-8 border border-border-light dark:border-border h-full">
+                <div class="flex gap-1 text-belis-primary mb-4">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="italic text-text-secondary text-sm md:text-base">"Me ayudaron a convertir una idea en algo concreto y el resultado superó lo que imaginaba. La atención fue excelente."</p>
+                <div class="flex items-center gap-4 mt-6">
+                  <div class="w-10 h-10 rounded-full bg-belis-soft text-belis-dark flex items-center justify-center font-bold text-lg">J</div>
+                  <div>
+                    <p class="font-bold text-text">Cliente verificado</p>
+                    <p class="text-xs text-text-muted">Pedido personalizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 3 -->
+            <div class="testimonial-slide">
+              <div class="card bg-background-card dark:bg-background-dark/80 rounded-belis-lg shadow-belis-sm p-6 md:p-8 border border-border-light dark:border-border h-full">
+                <div class="flex gap-1 text-belis-primary mb-4">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="italic text-text-secondary text-sm md:text-base">"La presentación fue impecable y todo se sintió muy especial. Un detalle bonito, cuidado y hecho con mucha intención."</p>
+                <div class="flex items-center gap-4 mt-6">
+                  <div class="w-10 h-10 rounded-full bg-belis-soft text-belis-dark flex items-center justify-center font-bold text-lg">L</div>
+                  <div>
+                    <p class="font-bold text-text">Cliente verificado</p>
+                    <p class="text-xs text-text-muted">Pedido personalizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 4 -->
+            <div class="testimonial-slide">
+              <div class="card bg-background-card dark:bg-background-dark/80 rounded-belis-lg shadow-belis-sm p-6 md:p-8 border border-border-light dark:border-border h-full">
+                <div class="flex gap-1 text-belis-primary mb-4">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="italic text-text-secondary text-sm md:text-base">"El detalle fue perfecto para mi mamá. Se emocionó mucho al ver el cuidado y los colores que elegimos juntos."</p>
+                <div class="flex items-center gap-4 mt-6">
+                  <div class="w-10 h-10 rounded-full bg-belis-soft text-belis-dark flex items-center justify-center font-bold text-lg">C</div>
+                  <div>
+                    <p class="font-bold text-text">Cliente verificado</p>
+                    <p class="text-xs text-text-muted">Pedido personalizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Testimonio 5 -->
+            <div class="testimonial-slide">
+              <div class="card bg-background-card dark:bg-background-dark/80 rounded-belis-lg shadow-belis-sm p-6 md:p-8 border border-border-light dark:border-border h-full">
+                <div class="flex gap-1 text-belis-primary mb-4">
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                  <span class="material-symbols-outlined">star</span>
+                </div>
+                <p class="italic text-text-secondary text-sm md:text-base">"El detalle fue perfecto para mi mamá. Se emocionó mucho al ver el cuidado y los colores que elegimos juntos."</p>
+                <div class="flex items-center gap-4 mt-6">
+                  <div class="w-10 h-10 rounded-full bg-belis-soft text-belis-dark flex items-center justify-center font-bold text-lg">A</div>
+                  <div>
+                    <p class="font-bold text-text">Cliente verificado</p>
+                    <p class="text-xs text-text-muted">Pedido personalizado</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Indicadores (dots) -->
+          <div class="slider-dots" id="sliderDots"></div>
+        </div>
+      </div>
+    </section>
+    <!-- ==================== CONTACTO ==================== -->
+    <section id="contacto" class="py-16 md:py-20 bg-background-card dark:bg-background-dark/80">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="text-center mb-10 md:mb-16">
+          <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-text">Cuéntanos qué quieres crear</h2>
+          <p class="mt-2 text-text-secondary text-sm md:text-base">Cuéntanos la ocasión y te ayudamos a encontrar una propuesta que se sienta realmente especial.</p>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12">
+          <!-- Formulario -->
+          <div class="bg-background-secondary dark:bg-background-dark/50 rounded-belis-lg p-6 md:p-8 shadow-belis-sm">
+            <h3 class="text-xl md:text-2xl font-bold text-text mb-6">Cuéntanos tu idea</h3>
+            <form id="contact-form" onsubmit="enviarWhatsApp(event)" novalidate>
+              <div class="space-y-4">
                 <div>
-                    <h4 class="font-serif text-lg font-bold text-primary dark:text-accent-pink mb-6">Navegación</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#hero"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Inicio</a></li>
-                        <li><a href="#catalogo"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Catálogo</a></li>
-                        <li><a href="#nosotros"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Nosotros</a></li>
-                        <li><a href="#ocasiones"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Ocasiones</a></li>
-                        <li><a href="#testimonios"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Testimonios</a></li>
-                    </ul>
+                  <label class="block text-sm font-medium text-text-secondary mb-1">Nombre completo *</label>
+                  <input type="text" id="nombre" name="nombre" required class="w-full px-4 py-3 rounded-belis border border-border-light dark:border-border bg-background-card dark:bg-background-dark/60 focus:ring-2 focus:ring-belis-primary transition-all" placeholder="Ej: María Pérez" />
                 </div>
-
-                <!-- Columna 3: Productos -->
                 <div>
-                    <h4 class="font-serif text-lg font-bold text-primary dark:text-accent-pink mb-6">Productos</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#catalogo"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Rosas Eternas</a>
-                        </li>
-                        <li><a href="#catalogo"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Boxes
-                                Personalizados</a></li>
-                        <li><a href="#catalogo"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Detalles en
-                                Crochet</a></li>
-                        <li><a href="#catalogo"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Cartas
-                                Personalizadas</a></li>
-                        <li><a href="#catalogo"
-                                class="text-sm text-text-muted hover:text-primary transition-colors flex items-center gap-2 scroll-btn"><span
-                                    class="material-symbols-outlined text-xs">chevron_right</span> Peluches Premium</a>
-                        </li>
-                    </ul>
+                  <label class="block text-sm font-medium text-text-secondary mb-1">Correo electrónico *</label>
+                  <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-belis border border-border-light dark:border-border bg-background-card dark:bg-background-dark/60 focus:ring-2 focus:ring-belis-primary transition-all" placeholder="ejemplo@correo.com" />
                 </div>
-
-                <!-- Columna 4: Contacto -->
                 <div>
-                    <h4 class="font-serif text-lg font-bold text-primary dark:text-accent-pink mb-6">Contáctanos</h4>
-                    <ul class="space-y-4 mb-6">
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-primary text-sm mt-0.5">phone</span>
-                            <span class="text-sm text-text-muted">+51 998 282 536</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-primary text-sm mt-0.5">mail</span>
-                            <span class="text-sm text-text-muted">datellesbelis97@gmail.com</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-primary text-sm mt-0.5">location_on</span>
-                            <span class="text-sm text-text-muted">Cajamarca, Perú</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <span class="material-symbols-outlined text-primary text-sm mt-0.5">schedule</span>
-                            <span class="text-sm text-text-muted">Lun - Sáb: 9:00 AM - 8:00 PM</span>
-                        </li>
-                    </ul>
-
-                    <!-- Redes Sociales -->
-                     <div>
-                        <div class="flex gap-3">
-                            <!-- Facebook -->
-                            <a href="#" target="_blank"
-                                class="social-icon w-10 h-10 rounded-full bg-primary/10 dark:bg-white/5 flex items-center justify-center text-primary hover:bg-[#1877F2] hover:text-white transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                </svg>
-                            </a>
-                            <!-- Instagram -->
-                            <a href="https://www.instagram.com/belis_pe/" target="_blank"
-                                class="social-icon w-10 h-10 rounded-full bg-primary/10 dark:bg-white/5 flex items-center justify-center text-primary hover:bg-gradient-to-r hover:from-[#833AB4] hover:via-[#FD1D1D] hover:to-[#FCAF45] hover:text-white transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                                </svg>
-                            </a>
-                            <!-- TikTok -->
-                            <a href="#" target="_blank"
-                                class="social-icon w-10 h-10 rounded-full bg-primary/10 dark:bg-white/5 flex items-center justify-center text-primary hover:bg-black hover:text-white transition-all">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
-                                    class="w-5 h-5 fill-current">
-                                    <path
-                                        d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-                                </svg>
-                            </a>
-                        </div>
-                    </div>
+                  <label class="block text-sm font-medium text-text-secondary mb-1">Teléfono *</label>
+                  <input type="tel" id="telefono" name="telefono" required class="w-full px-4 py-3 rounded-belis border border-border-light dark:border-border bg-background-card dark:bg-background-dark/60 focus:ring-2 focus:ring-belis-primary transition-all" placeholder="Ej: 987654321" />
                 </div>
-            </div>
-
-            <!-- Línea divisoria -->
-            <div class="border-t border-[#edebef] dark:border-white/10 pt-8">
-                <div class="flex flex-col md:flex-row justify-between items-center gap-4">
-                    <div class="text-center md:text-left">
-                        <p class="text-xs text-text-muted dark:text-gray-500">
-                            © 2026 Detalles Beli's. Todos los derechos reservados.
-                        </p>
-                    </div>
-                    <div class="flex items-center gap-6">
-                        <div class="flex gap-4">
-                            <a href="#"
-                                class="text-xs text-text-muted hover:text-primary transition-colors">Términos</a>
-                            <a href="#"
-                                class="text-xs text-text-muted hover:text-primary transition-colors">Privacidad</a>
-                            <a href="#" class="text-xs text-text-muted hover:text-primary transition-colors">Cookies</a>
-                        </div>
-                        <button id="theme-toggle"
-                            class="flex items-center gap-2 text-xs text-text-muted hover:text-primary transition-colors">
-                            <span class="material-symbols-outlined text-sm dark:hidden">dark_mode</span>
-                            <span class="material-symbols-outlined text-sm hidden dark:inline">light_mode</span>
-                            <span>Tema</span>
-                        </button>
-                    </div>
+                <div>
+                  <label class="block text-sm font-medium text-text-secondary mb-1">Tipo de regalo *</label>
+                  <select id="tipo_regalo" name="tipo_regalo" required class="w-full px-4 py-3 rounded-belis border border-border-light dark:border-border bg-background-card dark:bg-background-dark/60 focus:ring-2 focus:ring-belis-primary transition-all">
+                    <option value="">Selecciona una opción</option>
+                    <option value="Rosas eternas">Rosas eternas</option>
+                    <option value="Box personalizado">Box personalizado</option>
+                    <option value="Detalle en crochet">Detalle en crochet</option>
+                    <option value="Carta personalizada">Carta personalizada</option>
+                    <option value="Chocolates gourmet">Chocolates gourmet</option>
+                    <option value="Peluche premium">Peluche premium</option>
+                    <option value="Otro">Otro</option>
+                  </select>
                 </div>
+                <div>
+                  <label class="block text-sm font-medium text-text-secondary mb-1">Mensaje adicional</label>
+                  <textarea id="mensaje" name="mensaje" rows="3" class="w-full px-4 py-3 rounded-belis border border-border-light dark:border-border bg-background-card dark:bg-background-dark/60 focus:ring-2 focus:ring-belis-primary transition-all" placeholder="Cuéntanos la ocasión, el estilo o cualquier idea que quieras transmitir..."></textarea>
+                </div>
+                <button type="submit" class="w-full bg-belis-primary hover:bg-belis-hover text-text-light font-bold py-4 px-8 rounded-belis-lg transition-all flex items-center justify-center gap-2 shadow-belis-pink hover:shadow-belis-md text-sm md:text-base focus:outline-none focus-visible:ring-2 focus-visible:ring-belis-dark focus-visible:ring-offset-2">
+                  <span class="material-symbols-outlined">send</span>
+                  Solicitar cotización
+                </button>
+                <p class="text-xs text-text-muted text-center">Al enviar, prepararemos tu consulta y podrás continuar la conversación por WhatsApp.</p>
+              </div>
+            </form>
+          </div>
+          <!-- También puedes contactarnos directamente -->
+          <div class="space-y-6 md:space-y-8">
+            <div>
+              <h3 class="text-xl md:text-2xl font-bold text-text mb-6">También puedes contactarnos directamente</h3>
+              <div class="space-y-4 md:space-y-6">
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-belis-soft flex items-center justify-center text-belis-primary flex-shrink-0">
+                    <span class="material-symbols-outlined text-xl md:text-2xl">phone</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-sm md:text-base text-text">Teléfono / WhatsApp</p>
+                    <a href="tel:+51998282536" class="text-text-secondary text-sm md:text-base hover:text-belis-dark transition-colors">+51 998 282 536</a>
+                    <p class="text-xs text-text-muted">Horario de atención: Lun–Sáb · 9:00 am–8:00 pm</p>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-belis-soft flex items-center justify-center text-belis-primary flex-shrink-0">
+                    <span class="material-symbols-outlined text-xl md:text-2xl">mail</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-sm md:text-base text-text">Email</p>
+                    <a href="mailto:detallesbelis@gmail.com" class="text-text-secondary text-sm md:text-base hover:text-belis-dark transition-colors">detallesbelis@gmail.com</a>
+                  </div>
+                </div>
+                <div class="flex items-start gap-4">
+                  <div class="w-10 h-10 md:w-12 md:h-12 rounded-full bg-belis-soft flex items-center justify-center text-belis-primary flex-shrink-0">
+                    <span class="material-symbols-outlined text-xl md:text-2xl">location_on</span>
+                  </div>
+                  <div>
+                    <p class="font-bold text-sm md:text-base text-text">Disponibilidad y entregas</p>
+                    <p class="text-text-secondary text-sm md:text-base">Consulta disponibilidad y cobertura para tu pedido</p>
+                  </div>
+                </div>
+              </div>
             </div>
+            <!-- Bloque de confianza -->
+            <div class="rounded-belis-lg border border-border-light bg-background-secondary p-6 md:p-8 shadow-belis-sm">
+              <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-belis-soft text-belis-primary">
+                <span class="material-symbols-outlined">favorite</span>
+              </span>
+              <h3 class="mt-4 text-xl md:text-2xl font-bold text-text">Tu experiencia empieza con una buena idea</h3>
+              <p class="mt-2 text-sm md:text-base leading-relaxed text-text-secondary">
+                Cuéntanos la ocasión, la persona y el estilo que imaginas. Te orientamos para encontrar una propuesta que tenga sentido y se sienta hecha para ese momento.
+              </p>
+              <div class="mt-5 flex flex-wrap gap-2 text-xs font-semibold text-text-secondary">
+                <span class="rounded-full bg-background-card px-3 py-2 border border-border-light">Atención cercana</span>
+                <span class="rounded-full bg-background-card px-3 py-2 border border-border-light">Propuestas personalizadas</span>
+                <span class="rounded-full bg-background-card px-3 py-2 border border-border-light">Coordinación según disponibilidad</span>
+              </div>
+            </div>
+            <!-- Redes sociales -->
+            <div>
+              <p class="font-bold text-text mb-3">Síguenos</p>
+              <a href="https://www.instagram.com/belis_pe/" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Detalles Belis"
+                 class="inline-flex items-center gap-2 rounded-full bg-belis-soft px-4 py-2.5 text-sm font-semibold text-belis-dark transition-all hover:bg-belis-primary hover:text-text-light">
+                <span class="material-symbols-outlined text-lg">photo_camera</span>
+                Instagram
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="bg-background-card dark:bg-background-dark/80 border-t border-border-light dark:border-border pt-12 md:pt-16 pb-6 md:pb-8">
+      <div class="max-w-[1200px] mx-auto px-4 md:px-6">
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 mb-8 md:mb-12">
+          <div class="space-y-4">
+            <div class="flex items-center gap-3">
+              <img src="assets/img/logo_detallesbelis.png" alt="Detalles Belis" class="h-16 sm:h-18 md:h-20 w-auto object-contain" />
+            </div>
+            <p class="text-sm text-text-secondary">Creamos detalles personalizados para celebrar, agradecer y sorprender en momentos que merecen algo especial.</p>
+          </div>
+          <div>
+            <h4 class="font-bold text-text mb-4">Navegación</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#hero" class="text-text/90 hover:text-belis-dark transition-colors">Inicio</a></li>
+              <li><a href="#nosotros" class="text-text/90 hover:text-belis-dark transition-colors">Nosotros</a></li>
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Catálogo</a></li>
+              <li><a href="#crea-tu-regalo" class="text-text/90 hover:text-belis-dark transition-colors">Crea tu regalo</a></li>
+              <li><a href="#testimonios" class="text-text/90 hover:text-belis-dark transition-colors">Testimonios</a></li>
+              <li><a href="#contacto" class="text-text/90 hover:text-belis-dark transition-colors">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-text mb-4">Productos</h4>
+            <ul class="space-y-2 text-sm">
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Rosas Eternas</a></li>
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Boxes Personalizados</a></li>
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Peluches Premium</a></li>
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Cartas Personalizadas</a></li>
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Chocolates Gourmet</a></li>
+              <li><a href="#catalogo" class="text-text/90 hover:text-belis-dark transition-colors">Cajas Personalizadas</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold text-text mb-4">Cuéntanos qué quieres crear</h4>
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center gap-2 text-text-secondary"><span class="material-symbols-outlined text-belis-primary text-sm">phone</span> +51 998 282 536</li>
+              <li class="flex items-center gap-2 text-text-secondary"><span class="material-symbols-outlined text-belis-primary text-sm">mail</span> detallesbelis@gmail.com</li>
+              <li class="flex items-center gap-2 text-text-secondary"><span class="material-symbols-outlined text-belis-primary text-sm">location_on</span> Consulta disponibilidad y cobertura para tu pedido</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-border-light dark:border-border pt-6 md:pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-text-muted">
+          <p>© 2026 Detalles Belis. Todos los derechos reservados.</p>
+          <div class="flex gap-6">
+            <a href="https://www.instagram.com/belis_pe/" target="_blank" rel="noopener noreferrer" class="hover:text-belis-primary transition-colors">Instagram</a>
+          </div>
+        </div>
+      </div>
     </footer>
+  </div>
+  <!-- Back to top -->
+  <button id="back-to-top" aria-label="Volver arriba" class="fixed bottom-8 left-8 w-12 h-12 rounded-full bg-belis-primary text-text-light shadow-belis-pink hover:shadow-belis-md transition-all opacity-0 scale-0 hover:scale-105 z-50 flex items-center justify-center">
+    <span class="material-symbols-outlined">arrow_upward</span>
+  </button>
+  <!-- WhatsApp float -->
+  <a href="https://wa.me/51998282536" target="_blank" rel="noopener noreferrer" aria-label="Escribir a Detalles Belis por WhatsApp" title="WhatsApp" class="fixed bottom-6 right-5 md:bottom-8 md:right-8 z-50 whatsapp-float">
+    <div class="w-14 h-14 rounded-full bg-[#25D366] text-text-light shadow-belis-md hover:shadow-belis-lg transition-all flex items-center justify-center hover:scale-110">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 h-8 fill-current"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.173.198-.297.298-.496.099-.199.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.76.982.998-3.675-.236-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.004 5.45-4.438 9.88-9.888 9.88m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.333.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.333 11.893-11.893 0-3.18-1.24-6.162-3.495-8.411"/></svg>
     </div>
-
-    <!-- Back to Top Button -->
-    <button id="back-to-top"
-        class="fixed bottom-8 left-8 w-12 h-12 rounded-full bg-primary text-white shadow-lg hover:shadow-xl transition-all opacity-0 scale-0 hover:scale-105 z-45">
-        <span class="material-symbols-outlined">arrow_upward</span>
-    </button>
-
-    <!-- WhatsApp Float Button a la derecha -->
-    <a href="https://wa.me/51998282536" target="_blank" class="whatsapp-float fixed bottom-8 right-8 z-50">
-        <div
-            class="w-14 h-14 rounded-full bg-[#25D366] text-white shadow-lg hover:shadow-xl transition-all duration-300 flex items-center justify-center hover:scale-110 animate-bounce">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="w-8 h-8">
-                <path fill="#FFFFFF"
-                    d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.521.149-.173.198-.297.298-.496.099-.199.05-.371-.025-.521-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.76.982.998-3.675-.236-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.9 6.994c-.004 5.45-4.438 9.88-9.888 9.88m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.333.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.333 11.893-11.893 0-3.18-1.24-6.162-3.495-8.411" />
-            </svg>
-        </div>
-    </a>
-    <!-- JavaScript -->
-    <script src="js/preloader.js"></script>
-    <script src="js/main.js"></script>
+  </a>
+  <!-- Scripts -->
+  <script src="assets/js/preloader.js"></script>
+  <script src="assets/js/main.js"></script>
 </body>
-
 </html>

@@ -1,0 +1,253 @@
+/* =========================================================
+   DETALLES BELIS
+   PRELOADER
+   ========================================================= */
+
+#preloader {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      #FFF9F9 0%,
+      #FFFFFF 100%
+    );
+
+  /* Debe estar por encima del header */
+  z-index: 999999;
+
+  opacity: 1;
+  visibility: visible;
+
+  overflow: hidden;
+
+  transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+}
+
+
+/* =========================================================
+   DARK MODE
+   ========================================================= */
+
+html.dark #preloader {
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(240, 160, 192, 0.05),
+      transparent 42%
+    ),
+    linear-gradient(
+      135deg,
+      #171416 0%,
+      #211C1F 100%
+    );
+}
+
+
+/* =========================================================
+   OCULTAR PRELOADER
+   ========================================================= */
+
+#preloader.hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+
+/* =========================================================
+   CONTENIDO
+   ========================================================= */
+
+.preloader-content {
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+
+  padding: 1.5rem;
+
+  animation:
+    preloaderFadeIn 0.7s ease both;
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.preloader-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 1.5rem;
+}
+
+.preloader-logo img {
+  display: block;
+
+  width: 140px;
+  height: 140px;
+
+  object-fit: contain;
+
+  filter:
+    drop-shadow(
+      0 10px 25px
+      rgba(240, 160, 192, 0.16)
+    );
+}
+
+
+/* =========================================================
+   SPINNER
+   ========================================================= */
+
+.preloader-spinner {
+  width: 54px;
+  height: 54px;
+
+  margin:
+    0 auto 1.4rem;
+
+  border:
+    4px solid
+    rgba(240, 160, 192, 0.18);
+
+  border-top-color:
+    #F0A0C0;
+
+  border-radius:
+    50%;
+
+  animation:
+    preloaderSpin 0.9s linear infinite;
+}
+
+
+/* =========================================================
+   TEXTO
+   ========================================================= */
+
+.preloader-text {
+  margin: 0;
+
+  color: #D9799F;
+
+  font-family:
+    'Poppins',
+    sans-serif;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  line-height: 1.5;
+
+  letter-spacing: 1.4px;
+
+  text-transform: uppercase;
+
+  transition:
+    opacity 0.3s ease;
+
+  animation:
+    preloaderPulse 2s ease-in-out infinite;
+}
+
+
+html.dark .preloader-text {
+  color: #F0A0C0;
+}
+
+
+/* =========================================================
+   ANIMACIONES
+   ========================================================= */
+
+@keyframes preloaderSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+@keyframes preloaderFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@keyframes preloaderPulse {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.55;
+  }
+}
+
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  .preloader-logo img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .preloader-spinner {
+    width: 48px;
+    height: 48px;
+  }
+
+  .preloader-text {
+    max-width: 280px;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 1.2px;
+  }
+}
+
+
+/* =========================================================
+   MOVIMIENTO REDUCIDO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .preloader-content {
+    animation: none;
+  }
+
+  .preloader-text {
+    animation: none;
+  }
+}

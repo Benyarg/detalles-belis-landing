@@ -1,0 +1,2741 @@
+/* =========================================================
+   DETALLES BELIS
+   STYLE.CSS — VERSIÓN CORREGIDA Y UNIFICADA
+   ========================================================= */
+
+
+/* =========================================================
+   1. VARIABLES DEL SISTEMA VISUAL
+   ========================================================= */
+
+:root {
+
+  /* Marca */
+  --brand-primary: #F0A0C0;
+  --brand-primary-hover: #E88CAF;
+  --brand-primary-light: #F8DCE7;
+  --brand-primary-soft: #FBEAF0;
+  --brand-primary-dark: #D9799F;
+
+  /* Acentos */
+  --accent-gold: #E8C978;
+  --accent-gold-light: #F5E7B5;
+
+  --accent-green: #789879;
+  --accent-green-light: #E4EEE4;
+
+  /* Fondos */
+  --bg-primary: #FFF9FA;
+  --bg-secondary: #FFF1F5;
+  --bg-tertiary: #F8DCE7;
+  --bg-card: #FFFFFF;
+
+  /* Texto */
+  --text-primary: #171318;
+  --text-secondary: #6F6269;
+  --text-muted: #9C8F96;
+  --text-light: #FFF9FA;
+  --text-on-primary: #251A1F;
+
+  /* Bordes */
+  --border-light: #F2DDE5;
+  --border-medium: #E8C4D1;
+  --border-dark: #CFAAB9;
+
+  /* Estados */
+  --success: #789879;
+  --success-light: #E4EEE4;
+
+  --warning: #D9A441;
+  --warning-light: #FFF3D6;
+
+  --error: #C96D7D;
+  --error-light: #FBE3E7;
+
+  --info: #8B9FC1;
+  --info-light: #E9EEF7;
+
+  /* Sombras */
+  --shadow-sm: 0 2px 8px rgba(23, 19, 24, 0.06);
+  --shadow-md: 0 8px 24px rgba(23, 19, 24, 0.09);
+  --shadow-lg: 0 16px 40px rgba(23, 19, 24, 0.12);
+  --shadow-pink: 0 10px 30px rgba(240, 160, 192, 0.25);
+
+  /* Radios */
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+  --radius-xl: 32px;
+  --radius-full: 999px;
+
+  /* Header */
+  --header-mobile: 82px;
+  --header-desktop: 104px;
+}
+
+
+/* =========================================================
+   2. VARIABLES DARK MODE
+   ========================================================= */
+
+html.dark {
+
+  color-scheme: dark;
+
+  /* Fondos */
+  --bg-primary: #171416;
+  --bg-secondary: #211C1F;
+  --bg-tertiary: #2A2327;
+  --bg-card: #241F22;
+
+  /* Texto */
+  --text-primary: #F8F0F3;
+  --text-secondary: #D0C1C7;
+  --text-muted: #A9979F;
+  --text-light: #FFF9FB;
+  --text-on-primary: #261B20;
+
+  /* Bordes */
+  --border-light: #40353B;
+  --border-medium: #5C4A53;
+  --border-dark: #78616C;
+
+  /* Rosa */
+  --brand-primary: #F0A0C0;
+  --brand-primary-hover: #F4B0CA;
+  --brand-primary-light: #5A3545;
+  --brand-primary-soft: #3B252E;
+  --brand-primary-dark: #F2A8C4;
+
+  /* Dorado */
+  --accent-gold: #E8C978;
+  --accent-gold-light: #5C4C24;
+
+  /* Verde */
+  --accent-green: #98B598;
+  --accent-green-light: #2B392D;
+
+  /* Sombras */
+  --shadow-sm: 0 3px 12px rgba(0, 0, 0, 0.22);
+  --shadow-md: 0 10px 28px rgba(0, 0, 0, 0.32);
+  --shadow-lg: 0 18px 45px rgba(0, 0, 0, 0.42);
+  --shadow-pink: 0 10px 30px rgba(240, 160, 192, 0.14);
+}
+
+
+/* =========================================================
+   3. BASE
+   ========================================================= */
+
+html {
+  margin: 0;
+  padding: 0;
+
+  scroll-behavior: smooth;
+  scroll-padding-top: 7rem;
+
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  min-height: 100%;
+
+  background: var(--bg-primary);
+  color: var(--text-primary);
+
+  font-family: 'Poppins', sans-serif;
+
+  overflow-x: hidden;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+html.dark body {
+  background-color: var(--bg-primary) !important;
+  color: var(--text-primary) !important;
+}
+
+button,
+input,
+textarea,
+select {
+  font-family: 'Poppins', sans-serif;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--brand-primary-light);
+  color: var(--text-primary);
+}
+
+
+/* =========================================================
+   4. TIPOGRAFÍA
+   ========================================================= */
+
+.font-serif {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-sans {
+  font-family: 'Poppins', sans-serif;
+}
+
+.font-cursive {
+  font-family: 'Dancing Script', cursive;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+
+
+/* =========================================================
+   5. SECCIONES / SCROLL
+   ========================================================= */
+
+section {
+  position: relative;
+}
+
+section[id] {
+  scroll-margin-top: 7rem;
+}
+
+
+/* =========================================================
+   6. HEADER
+   ========================================================= */
+
+#main-header {
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  right: 0;
+
+  width: 100%;
+
+  z-index: 9999;
+
+  /* Mismo tono con el que empieza el Hero */
+  background: #FFF9FA;
+
+  border: 0 !important;
+  border-bottom: 0 !important;
+
+  box-shadow: none !important;
+
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  transition:
+    background-color 0.35s ease,
+    box-shadow 0.35s ease,
+    backdrop-filter 0.35s ease;
+}
+
+
+/* Header dark = mismo inicio del Hero */
+
+html.dark #main-header {
+  background: #171416 !important;
+
+  border: 0 !important;
+  border-bottom: 0 !important;
+
+  box-shadow: none !important;
+}
+
+
+/* =========================================================
+   7. HEADER AL HACER SCROLL
+   Sin línea. Solo sombra mínima.
+   ========================================================= */
+
+#main-header.scrolled {
+  background: rgba(255, 249, 250, 0.975);
+
+  border: 0 !important;
+  border-bottom: 0 !important;
+
+  box-shadow:
+    0 4px 18px rgba(23, 19, 24, 0.045) !important;
+}
+
+html.dark #main-header.scrolled {
+  background: rgba(23, 20, 22, 0.975) !important;
+
+  border: 0 !important;
+  border-bottom: 0 !important;
+
+  box-shadow:
+    0 4px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* =========================================================
+   8. LOGO DEL HEADER
+   ========================================================= */
+
+.header-logo {
+  display: block;
+
+  width: auto;
+  height: 80px;
+
+  max-width: 200px;
+
+  object-fit: contain;
+
+  transition:
+    transform 0.3s ease,
+    filter 0.3s ease;
+}
+
+#main-header a:hover .header-logo {
+  transform: scale(1.025);
+}
+
+
+/* =========================================================
+   9. NAV DESKTOP
+   ========================================================= */
+
+.nav-link {
+  position: relative;
+
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  color: #51444A;
+
+  transition:
+    color 0.25s ease;
+}
+
+
+/* Línea solo debajo del elemento activo */
+
+.nav-link::after {
+  content: "";
+
+  position: absolute;
+
+  left: 50%;
+  bottom: -8px;
+
+  width: 0;
+  height: 2px;
+
+  border-radius: var(--radius-full);
+
+  background: var(--brand-primary);
+
+  transform: translateX(-50%);
+
+  transition: width 0.3s ease;
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--brand-primary-dark);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+
+/* Dark nav */
+
+html.dark #main-header .nav-link {
+  color: #D9CDD2 !important;
+}
+
+html.dark #main-header .nav-link:hover,
+html.dark #main-header .nav-link.active {
+  color: var(--brand-primary) !important;
+}
+
+html.dark #main-header .nav-link::after {
+  background: var(--brand-primary);
+}
+
+
+/* =========================================================
+   10. BOTÓN TEMA
+   ========================================================= */
+
+#theme-toggle {
+  color: var(--text-secondary);
+}
+
+#theme-toggle:hover {
+  background:
+    rgba(240, 160, 192, 0.12);
+}
+
+#theme-icon {
+  color: var(--text-secondary);
+}
+
+html.dark #theme-toggle,
+html.dark #theme-icon {
+  color: #E7DBE0 !important;
+}
+
+html.dark #theme-toggle:hover {
+  background:
+    rgba(240, 160, 192, 0.10) !important;
+}
+
+
+/* =========================================================
+   11. CTA HEADER
+   ========================================================= */
+
+#main-header a[href="#contacto"].bg-belis-primary {
+  color: #281D22 !important;
+}
+
+html.dark #main-header a[href="#contacto"].bg-belis-primary {
+  color: #281D22 !important;
+}
+
+
+/* =========================================================
+   12. HERO
+   ========================================================= */
+
+#hero {
+  overflow: hidden;
+}
+
+.hero-gradient {
+  background:
+
+    radial-gradient(
+      circle at 12% 18%,
+      rgba(255, 255, 255, 0.82),
+      transparent 34%
+    ),
+
+    linear-gradient(
+      135deg,
+      #FFF9FA 0%,
+      #FBEAF0 48%,
+      #F8DCE7 100%
+    );
+}
+
+
+/* Dark mode:
+   empieza exactamente con #171416,
+   igual que el navbar.
+*/
+
+html.dark .hero-gradient {
+  background:
+
+    radial-gradient(
+      circle at 14% 20%,
+      rgba(240, 160, 192, 0.035),
+      transparent 34%
+    ),
+
+    linear-gradient(
+      135deg,
+      #171416 0%,
+      #211C1F 52%,
+      #2A2327 100%
+    );
+}
+
+#hero img {
+  display: block;
+}
+
+
+/* =========================================================
+   13. HERO DARK MODE
+   ========================================================= */
+
+html.dark #hero h1 {
+  color: #FFF6F9 !important;
+}
+
+html.dark #hero h1 .text-belis-primary {
+  color: var(--brand-primary) !important;
+}
+
+html.dark #hero p {
+  color: #D7C9CF !important;
+}
+
+html.dark #hero .text-text-secondary {
+  color: #D7C9CF !important;
+}
+
+
+/* Badge */
+
+html.dark #hero > div .bg-belis-soft {
+  background:
+    rgba(240, 160, 192, 0.10) !important;
+
+  border-color:
+    rgba(240, 160, 192, 0.28) !important;
+}
+
+
+/* =========================================================
+   14. TEXTOS DARK GENERALES
+   ========================================================= */
+
+html.dark .text-text {
+  color: var(--text-primary) !important;
+}
+
+html.dark .text-text-secondary {
+  color: var(--text-secondary) !important;
+}
+
+html.dark .text-text-muted {
+  color: var(--text-muted) !important;
+}
+
+html.dark .text-text-light {
+  color: var(--text-light) !important;
+}
+
+html.dark .text-belis-dark {
+  color: var(--brand-primary-dark) !important;
+}
+
+
+/* Corrige los text-[#352B30] existentes */
+
+html.dark .text-\[\#352B30\] {
+  color: #E8DCE1 !important;
+}
+
+
+/* =========================================================
+   15. BACKGROUNDS DARK
+   ========================================================= */
+
+html.dark .bg-background-card {
+  background-color: var(--bg-card) !important;
+}
+
+html.dark .bg-background-secondary {
+  background-color: var(--bg-secondary) !important;
+}
+
+html.dark .bg-background-tertiary {
+  background-color: var(--bg-tertiary) !important;
+}
+
+
+/* Alternancia de secciones */
+
+html.dark #nosotros,
+html.dark #catalogo,
+html.dark #ocasiones,
+html.dark #contacto {
+  background-color: #1B1719 !important;
+}
+
+html.dark #stats,
+html.dark #crea-tu-regalo,
+html.dark #testimonios {
+  background-color: #211C1F !important;
+}
+
+
+/* =========================================================
+   16. TARJETAS
+   ========================================================= */
+
+.card {
+  background-color: var(--bg-card);
+
+  border:
+    1px solid var(--border-light);
+
+  border-radius: var(--radius-lg);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease,
+    background-color 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+
+  border-color: var(--brand-primary);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+.occasion-card {
+  background-color: var(--bg-card);
+
+  border:
+    1px solid var(--border-light);
+
+  border-radius: var(--radius-md);
+
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    border-color 0.35s ease;
+}
+
+.occasion-card:hover {
+  transform: translateY(-6px);
+
+  border-color: var(--brand-primary);
+
+  box-shadow: var(--shadow-md);
+}
+
+
+/* =========================================================
+   17. TARJETAS DARK
+   ========================================================= */
+
+html.dark .card {
+  background-color: #241F22 !important;
+
+  border-color: #44363D !important;
+
+  box-shadow:
+    0 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+html.dark .card:hover {
+  background-color: #292326 !important;
+
+  border-color:
+    rgba(240, 160, 192, 0.50) !important;
+
+  box-shadow:
+    0 12px 30px rgba(0, 0, 0, 0.30);
+}
+
+
+html.dark .occasion-card {
+  background-color: #241F22 !important;
+
+  border-color: #44363D !important;
+}
+
+html.dark .occasion-card:hover {
+  background-color: #292326 !important;
+
+  border-color:
+    rgba(240, 160, 192, 0.50) !important;
+}
+
+
+html.dark .card h3,
+html.dark .occasion-card h3 {
+  color: #F7EEF2 !important;
+}
+
+html.dark .card p,
+html.dark .occasion-card p {
+  color: #C8B8BF !important;
+}
+
+
+/* =========================================================
+   18. IMÁGENES CATÁLOGO
+   ========================================================= */
+
+.image-trigger {
+  position: relative;
+
+  overflow: hidden;
+
+  cursor: zoom-in;
+}
+
+.card .image-trigger {
+  background:
+    var(--bg-secondary);
+}
+
+.card .image-trigger::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  pointer-events: none;
+
+  background:
+    linear-gradient(
+      to top,
+      rgba(23, 19, 24, 0.08),
+      transparent 45%
+    );
+}
+
+.card .image-trigger img {
+  display: block;
+
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+
+  transition:
+    transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.card:hover .image-trigger img {
+  transform: scale(1.06);
+}
+
+html.dark .card .image-trigger::after {
+  background:
+    linear-gradient(
+      to top,
+      rgba(0, 0, 0, 0.18),
+      transparent 48%
+    );
+}
+
+
+/* =========================================================
+   19. BOTONES PERSONALIZADOS
+   ========================================================= */
+
+.btn-primary {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  padding:
+    0.75rem 2rem;
+
+  border-radius:
+    var(--radius-full);
+
+  background:
+    var(--brand-primary);
+
+  color:
+    var(--text-on-primary);
+
+  font-weight: 600;
+
+  box-shadow:
+    var(--shadow-pink);
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.btn-primary:hover {
+  background:
+    var(--brand-primary-hover);
+
+  transform:
+    translateY(-2px);
+
+  box-shadow:
+    var(--shadow-md);
+}
+
+
+.btn-outline {
+  display: inline-flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  padding:
+    0.75rem 2rem;
+
+  border:
+    2px solid var(--brand-primary);
+
+  border-radius:
+    var(--radius-full);
+
+  background: transparent;
+
+  color:
+    var(--brand-primary);
+
+  font-weight: 600;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.btn-outline:hover {
+  background:
+    var(--brand-primary-soft);
+
+  transform:
+    translateY(-2px);
+}
+
+
+/* =========================================================
+   20. BOTONES DARK
+   ========================================================= */
+
+html.dark .bg-belis-primary {
+  background-color:
+    var(--brand-primary) !important;
+
+  color:
+    #281D22 !important;
+}
+
+html.dark .hover\:bg-belis-hover:hover {
+  background-color:
+    var(--brand-primary-hover) !important;
+
+  color:
+    #281D22 !important;
+}
+
+html.dark #hero .border-belis-primary\/40 {
+  border-color:
+    rgba(240, 160, 192, 0.60) !important;
+
+  color:
+    var(--brand-primary) !important;
+}
+
+html.dark #hero .border-belis-primary\/40:hover {
+  background:
+    rgba(240, 160, 192, 0.08) !important;
+}
+
+
+/* =========================================================
+   21. FONDOS ROSADOS DARK
+   ========================================================= */
+
+html.dark .bg-belis-soft {
+  background-color:
+    #3C2931 !important;
+}
+
+html.dark .bg-belis-light {
+  background-color:
+    #4A323B !important;
+}
+
+
+/* =========================================================
+   22. ICONOS DARK
+   ========================================================= */
+
+html.dark .material-symbols-outlined.text-belis-primary {
+  color:
+    var(--brand-primary) !important;
+}
+
+
+/* =========================================================
+   23. STATS
+   ========================================================= */
+
+#stats [id^="stat-"] {
+  font-variant-numeric:
+    tabular-nums;
+
+  min-width: 2ch;
+}
+
+
+/* =========================================================
+   24. FORMULARIOS
+   ========================================================= */
+
+input,
+textarea,
+select {
+  color:
+    var(--text-primary);
+
+  background:
+    var(--bg-card);
+
+  border-color:
+    var(--border-light);
+
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color:
+    var(--text-muted);
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+
+  border-color:
+    var(--brand-primary);
+
+  box-shadow:
+    0 0 0 3px rgba(240, 160, 192, 0.15);
+}
+
+
+/* =========================================================
+   25. FORMULARIOS DARK
+   ========================================================= */
+
+html.dark input,
+html.dark textarea,
+html.dark select {
+  color:
+    #F7EEF2 !important;
+
+  background-color:
+    #191618 !important;
+
+  border-color:
+    #4A3A42 !important;
+}
+
+html.dark input::placeholder,
+html.dark textarea::placeholder {
+  color:
+    #8F7D85 !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  background-color:
+    #1E191C !important;
+
+  border-color:
+    var(--brand-primary) !important;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(240, 160, 192, 0.12) !important;
+}
+
+html.dark select option {
+  background:
+    #241F22;
+
+  color:
+    #F7EEF2;
+}
+
+html.dark #contacto label {
+  color:
+    #CDBDC4 !important;
+}
+
+
+/* =========================================================
+   26. CONTACTO DARK
+   ========================================================= */
+
+html.dark #contacto .bg-background-secondary {
+  background:
+    #241F22 !important;
+}
+
+html.dark #contacto .bg-background-secondary h3 {
+  color:
+    #F7EEF2 !important;
+}
+
+html.dark #contacto .bg-background-secondary p {
+  color:
+    #C8B8BF !important;
+}
+
+html.dark #contacto .rounded-full.bg-belis-soft {
+  background:
+    #3D2932 !important;
+}
+
+html.dark #contacto
+.rounded-full.bg-belis-soft
+.material-symbols-outlined {
+  color:
+    var(--brand-primary) !important;
+}
+
+
+/* Badges */
+
+html.dark #contacto
+.rounded-full.bg-background-card {
+  background:
+    #1C181A !important;
+
+  border-color:
+    #46373E !important;
+
+  color:
+    #C8B9BF !important;
+}
+
+
+/* =========================================================
+   27. TESTIMONIOS
+   ========================================================= */
+
+.testimonial-slider {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+}
+
+.testimonial-track {
+  display: flex;
+
+  width: 100%;
+
+  will-change: transform;
+
+  transition:
+    transform 0.6s
+    cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.testimonial-slide {
+  flex:
+    0 0 100%;
+
+  width: 100%;
+
+  padding:
+    0 0.5rem;
+
+  box-sizing:
+    border-box;
+}
+
+.testimonial-slide .card {
+  height: 100%;
+}
+
+
+/* Dark */
+
+html.dark .testimonial-slide .card {
+  background:
+    linear-gradient(
+      145deg,
+      #282125 0%,
+      #241F22 100%
+    ) !important;
+
+  border-color:
+    #45363D !important;
+}
+
+html.dark .testimonial-slide p {
+  color:
+    #CDBDC4 !important;
+}
+
+html.dark .testimonial-slide .text-text {
+  color:
+    #F7EEF2 !important;
+}
+
+html.dark .testimonial-slide .text-belis-primary {
+  color:
+    var(--brand-primary) !important;
+}
+
+html.dark .testimonial-slide .bg-belis-soft {
+  background:
+    #432E38 !important;
+
+  color:
+    var(--brand-primary) !important;
+}
+
+
+/* =========================================================
+   28. DOTS TESTIMONIOS
+   ========================================================= */
+
+.slider-dots {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 0.5rem;
+
+  margin-top: 1.5rem;
+}
+
+.slider-dot {
+  width: 0.625rem;
+  height: 0.625rem;
+
+  padding: 0;
+
+  border: 0;
+
+  border-radius:
+    var(--radius-full);
+
+  background:
+    var(--border-medium);
+
+  cursor: pointer;
+
+  transition:
+    width 0.3s ease,
+    background-color 0.3s ease,
+    opacity 0.3s ease;
+}
+
+.slider-dot:hover {
+  opacity: 0.8;
+}
+
+.slider-dot.active {
+  width: 1.5rem;
+
+  background:
+    var(--brand-primary);
+}
+
+html.dark .slider-dot {
+  background:
+    #57474F;
+}
+
+html.dark .slider-dot.active {
+  background:
+    var(--brand-primary);
+}
+
+
+/* =========================================================
+   29. PREMIUM DIVIDER
+   "DETALLES QUE HABLAN POR TI"
+   ========================================================= */
+
+.premium-divider {
+  position: relative;
+
+  isolation: isolate;
+
+  overflow: hidden;
+
+  background:
+    linear-gradient(
+      180deg,
+      var(--bg-card) 0%,
+      var(--bg-primary) 50%,
+      var(--bg-card) 100%
+    ) !important;
+
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+
+/* ELIMINAMOS LOS CÍRCULOS GRANDES DEL HTML */
+
+.premium-divider > div:first-child {
+  display: none !important;
+}
+
+
+/* Línea decorativa superior pequeña */
+
+.premium-divider::before {
+  content: "";
+
+  position: absolute;
+
+  top: 48px;
+  left: 50%;
+
+  width: 44px;
+  height: 1px;
+
+  background:
+    var(--accent-gold);
+
+  transform:
+    translateX(-50%);
+
+  opacity: 0.58;
+}
+
+.premium-divider::after {
+  content: none !important;
+}
+
+
+/* Contenido */
+
+.premium-divider > div:last-child {
+  position: relative;
+
+  z-index: 2;
+
+  max-width: 850px;
+
+  margin:
+    0 auto;
+
+  text-align: center;
+}
+
+
+/* Texto cursivo */
+
+.premium-divider .font-cursive {
+  display: inline-block;
+
+  color:
+    var(--brand-primary) !important;
+
+  font-size: 1.5rem;
+
+  line-height: 1.2;
+
+  margin-bottom: 0.5rem;
+}
+
+
+/* Pequeño detalle */
+
+.premium-divider .font-cursive::after {
+  content: "✦";
+
+  display: block;
+
+  margin-top: 0.9rem;
+
+  font-family:
+    'Poppins', sans-serif;
+
+  font-size: 0.6rem;
+
+  color:
+    var(--accent-gold);
+
+  opacity: 0.65;
+}
+
+
+/* Frase principal */
+
+.premium-divider p.font-serif {
+  max-width: 780px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  color:
+    var(--text-primary) !important;
+
+  font-size:
+    clamp(2rem, 4vw, 3.45rem);
+
+  line-height: 1.12;
+
+  letter-spacing:
+    -0.025em;
+}
+
+.premium-divider
+p.font-serif
+.text-belis-dark {
+  color:
+    var(--brand-primary-dark) !important;
+}
+
+
+/* Descripción */
+
+.premium-divider p:last-child {
+  max-width: 660px;
+
+  margin-left: auto;
+  margin-right: auto;
+
+  color:
+    var(--text-secondary) !important;
+
+  line-height: 1.8;
+}
+
+
+/* =========================================================
+   30. PREMIUM DIVIDER DARK
+   ========================================================= */
+
+html.dark .premium-divider {
+  background:
+    linear-gradient(
+      180deg,
+      #191618 0%,
+      #1D191B 50%,
+      #191618 100%
+    ) !important;
+}
+
+html.dark .premium-divider::before {
+  background:
+    var(--accent-gold);
+
+  opacity: 0.38;
+}
+
+html.dark .premium-divider .font-cursive {
+  color:
+    var(--brand-primary) !important;
+}
+
+html.dark .premium-divider p.font-serif {
+  color:
+    #F7EEF2 !important;
+}
+
+html.dark .premium-divider
+p.font-serif
+.text-belis-dark {
+  color:
+    var(--brand-primary) !important;
+}
+
+html.dark .premium-divider p:last-child {
+  color:
+    #C8B8BF !important;
+}
+
+
+/* =========================================================
+   31. MODAL DE IMÁGENES
+   ========================================================= */
+
+.modal-overlay {
+  display: none;
+
+  position: fixed;
+
+  inset: 0;
+
+  z-index: 10000;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 1.5rem;
+
+  background:
+    rgba(0, 0, 0, 0.82);
+
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+}
+
+.modal-overlay.active {
+  display: flex;
+
+  animation:
+    modalFadeIn 0.25s ease both;
+}
+
+@keyframes modalFadeIn {
+
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  position: relative;
+
+  width:
+    min(1100px, 95vw);
+
+  max-height: 90vh;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  animation:
+    modalScaleIn 0.25s ease both;
+}
+
+@keyframes modalScaleIn {
+
+  from {
+    transform:
+      scale(0.96);
+  }
+
+  to {
+    transform:
+      scale(1);
+  }
+}
+
+.modal-content img {
+  display: block;
+
+  width: auto;
+
+  max-width: 95vw;
+  max-height: 85vh;
+
+  object-fit: contain;
+
+  border-radius:
+    var(--radius-md);
+
+  box-shadow:
+    var(--shadow-lg);
+}
+
+.close-modal {
+  position: absolute;
+
+  top: -3.5rem;
+  right: 0;
+
+  width: 2.75rem;
+  height: 2.75rem;
+
+  display: grid;
+
+  place-items: center;
+
+  padding: 0;
+
+  background:
+    rgba(255, 255, 255, 0.15);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.25);
+
+  border-radius:
+    var(--radius-full);
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.close-modal:hover {
+  background:
+    rgba(255, 255, 255, 0.30);
+
+  transform:
+    rotate(90deg);
+}
+
+html.dark .modal-overlay {
+  background:
+    rgba(5, 4, 5, 0.90);
+}
+
+
+/* =========================================================
+   32. BACK TO TOP
+   ========================================================= */
+
+#back-to-top {
+  background:
+    var(--brand-primary);
+
+  color:
+    #FFFFFF;
+
+  box-shadow:
+    var(--shadow-pink);
+
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    background-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#back-to-top.visible {
+  opacity: 1 !important;
+
+  transform:
+    scale(1) !important;
+}
+
+#back-to-top:hover {
+  background:
+    var(--brand-primary-hover);
+
+  box-shadow:
+    var(--shadow-md);
+
+  transform:
+    scale(1.06) !important;
+}
+
+html.dark #back-to-top {
+  color:
+    #281D22;
+}
+
+
+/* =========================================================
+   33. WHATSAPP
+   ========================================================= */
+
+.whatsapp-float {
+  transition:
+    transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  transform:
+    scale(1.08);
+}
+
+.whatsapp-float > div {
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+html.dark .whatsapp-float > div {
+  box-shadow:
+    0 10px 30px
+    rgba(0, 0, 0, 0.38);
+}
+
+
+/* =========================================================
+   34. FOOTER
+   ========================================================= */
+
+footer a {
+  transition:
+    color 0.25s ease;
+}
+
+footer img {
+  display: block;
+}
+
+html.dark footer {
+  background:
+    #151214 !important;
+
+  border-top-color:
+    #40343A !important;
+}
+
+html.dark footer h4 {
+  color:
+    #F4EAEE !important;
+}
+
+html.dark footer p,
+html.dark footer li {
+  color:
+    #C8B8BF;
+}
+
+html.dark footer a {
+  color:
+    #CEC0C6;
+}
+
+html.dark footer a:hover {
+  color:
+    var(--brand-primary) !important;
+}
+
+html.dark footer .text-text {
+  color:
+    #F3E9ED !important;
+}
+
+html.dark footer .text-text-secondary {
+  color:
+    #BFAFB7 !important;
+}
+
+html.dark footer .text-text-muted {
+  color:
+    #96858D !important;
+}
+
+
+/* =========================================================
+   35. BORDES DARK
+   ========================================================= */
+
+html.dark .border-border-light {
+  border-color:
+    var(--border-light) !important;
+}
+
+html.dark .border-border {
+  border-color:
+    var(--border-medium) !important;
+}
+
+html.dark .border-border-dark {
+  border-color:
+    var(--border-dark) !important;
+}
+
+
+/* =========================================================
+   36. GLASS
+   ========================================================= */
+
+.glass-soft {
+  background:
+    rgba(255, 255, 255, 0.62);
+
+  backdrop-filter:
+    blur(12px);
+
+  -webkit-backdrop-filter:
+    blur(12px);
+}
+
+html.dark .glass-soft {
+  background:
+    rgba(35, 30, 33, 0.68);
+}
+
+
+/* =========================================================
+   37. FADE IN
+   ========================================================= */
+
+.animate-fade-in {
+  animation:
+    fadeInUp 0.6s ease both;
+}
+
+@keyframes fadeInUp {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translateY(0);
+  }
+}
+
+
+/* =========================================================
+   38. FOCUS / ACCESIBILIDAD
+   ========================================================= */
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline:
+    2px solid
+    var(--brand-primary-dark);
+
+  outline-offset:
+    3px;
+}
+
+html.dark a:focus-visible,
+html.dark button:focus-visible,
+html.dark input:focus-visible,
+html.dark textarea:focus-visible,
+html.dark select:focus-visible {
+  outline-color:
+    var(--brand-primary);
+}
+
+
+/* =========================================================
+   39. DESKTOP
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+  html {
+    scroll-padding-top:
+      7rem;
+  }
+
+  section[id] {
+    scroll-margin-top:
+      7rem;
+  }
+
+
+  /* Espacio vertical alrededor del logo */
+
+  #main-header > div > div:first-child {
+    min-height:
+      var(--header-desktop) !important;
+  }
+
+  .header-logo {
+    height: 80px;
+
+    max-width: 200px;
+  }
+
+
+  /* Testimonios */
+
+  .testimonial-slide {
+    flex:
+      0 0 33.333333%;
+
+    width:
+      33.333333%;
+  }
+}
+
+
+/* =========================================================
+   40. DESKTOP > 1024
+   ========================================================= */
+
+@media (min-width: 1024px) {
+
+  .header-logo {
+    height: 82px;
+
+    max-width: 205px;
+  }
+}
+
+
+/* =========================================================
+   41. DESKTOP GRANDE
+   ========================================================= */
+
+@media (min-width: 1280px) {
+
+  #main-header > div > div:first-child {
+    min-height:
+      108px !important;
+  }
+
+  .header-logo {
+    height: 84px;
+
+    max-width: 210px;
+  }
+}
+
+
+/* =========================================================
+   42. MÓVIL
+   ========================================================= */
+
+@media (max-width: 767px) {
+
+  /* =======================================================
+     SCROLL
+     ======================================================= */
+
+  html {
+    scroll-padding-top:
+      5.75rem;
+  }
+
+  section[id] {
+    scroll-margin-top:
+      5.75rem;
+  }
+
+
+  /* =======================================================
+     HEADER
+     ======================================================= */
+
+  #main-header {
+    min-height:
+      var(--header-mobile);
+
+    height:
+      var(--header-mobile);
+  }
+
+
+  /* Más espacio a izquierda/derecha */
+
+  #main-header > div {
+    width: 100% !important;
+
+    max-width: none !important;
+
+    height:
+      var(--header-mobile);
+
+    padding-left:
+      20px !important;
+
+    padding-right:
+      20px !important;
+  }
+
+
+  /* Logo izquierda / menú derecha */
+
+  #main-header > div > div:first-child {
+    display: flex !important;
+
+    width: 100% !important;
+
+    min-height:
+      var(--header-mobile) !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      space-between !important;
+
+    gap:
+      0 !important;
+  }
+
+
+  /* =======================================================
+     LOGO MÓVIL
+     ======================================================= */
+
+  .header-logo {
+    width: auto !important;
+
+    height:
+      72px !important;
+
+    max-width:
+      165px !important;
+
+    object-fit:
+      contain !important;
+
+    transform:
+      scale(1.08);
+
+    transform-origin:
+      left center;
+  }
+
+  #main-header a:hover .header-logo {
+    transform:
+      scale(1.08);
+  }
+
+
+  /* =======================================================
+     ACCIONES DERECHA
+     ======================================================= */
+
+  #main-header
+  > div
+  > div:first-child
+  > div:last-child {
+    display: flex !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      flex-end !important;
+
+    flex:
+      0 0 auto !important;
+
+    width:
+      auto !important;
+
+    margin-left:
+      auto !important;
+  }
+
+
+  /* =======================================================
+     HAMBURGUESA
+     ======================================================= */
+
+  #mobile-menu-button {
+    display: flex !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      center !important;
+
+    flex:
+      0 0 auto !important;
+
+    width:
+      44px !important;
+
+    height:
+      44px !important;
+
+    margin-left:
+      auto !important;
+
+    padding:
+      0 !important;
+
+    border:
+      0 !important;
+
+    border-radius:
+      50% !important;
+
+    background:
+      transparent !important;
+
+    color:
+      #51444A;
+  }
+
+  #mobile-menu-button:hover {
+    background:
+      rgba(240, 160, 192, 0.12) !important;
+  }
+
+  #mobile-menu-button
+  .material-symbols-outlined {
+    font-size:
+      26px !important;
+
+    line-height:
+      1 !important;
+  }
+
+  html.dark #mobile-menu-button {
+    color:
+      #E2D5DA !important;
+  }
+
+  html.dark #mobile-menu-button:hover {
+    background:
+      rgba(240, 160, 192, 0.10) !important;
+  }
+
+
+  /* =======================================================
+     MENÚ MÓVIL
+     ======================================================= */
+
+  #mobile-menu {
+    position:
+      absolute !important;
+
+    top:
+      88px !important;
+
+    left:
+      20px !important;
+
+    right:
+      20px !important;
+
+    width:
+      auto !important;
+
+    margin:
+      0 !important;
+
+    padding:
+      18px !important;
+
+    border:
+      1px solid
+      rgba(232, 196, 209, 0.55) !important;
+
+    border-radius:
+      20px !important;
+
+    background:
+      rgba(255, 255, 255, 0.98) !important;
+
+    box-shadow:
+      0 16px 40px
+      rgba(23, 19, 24, 0.10) !important;
+
+    backdrop-filter:
+      blur(18px);
+
+    -webkit-backdrop-filter:
+      blur(18px);
+  }
+
+  html.dark #mobile-menu {
+    background:
+      rgba(32, 27, 30, 0.985) !important;
+
+    border-color:
+      rgba(92, 74, 83, 0.55) !important;
+
+    box-shadow:
+      0 16px 40px
+      rgba(0, 0, 0, 0.30) !important;
+  }
+
+
+  /* Sin subrayado rosa dentro del dropdown */
+
+  #mobile-menu .nav-link::after {
+    display: none !important;
+  }
+
+
+  #mobile-menu .mobile-nav-link {
+    width: 100% !important;
+
+    min-height:
+      45px;
+
+    color:
+      #51444A;
+
+    border-bottom:
+      1px solid
+      rgba(232, 196, 209, 0.45);
+  }
+
+  #mobile-menu
+  .mobile-nav-link:last-child {
+    border-bottom:
+      0;
+  }
+
+  html.dark
+  #mobile-menu
+  .mobile-nav-link {
+    color:
+      #DED1D6 !important;
+
+    border-bottom-color:
+      rgba(92, 74, 83, 0.45);
+  }
+
+  html.dark
+  #mobile-menu
+  .mobile-nav-link:hover,
+  html.dark
+  #mobile-menu
+  .mobile-nav-link.active {
+    color:
+      var(--brand-primary) !important;
+  }
+
+
+  /* Acciones inferiores */
+
+  .mobile-menu-actions {
+    margin-top:
+      16px;
+
+    padding-top:
+      16px;
+
+    border-top:
+      1px solid
+      rgba(232, 196, 209, 0.55);
+  }
+
+  html.dark
+  .mobile-menu-actions {
+    border-top-color:
+      rgba(92, 74, 83, 0.55);
+  }
+
+
+  #theme-toggle-mobile {
+    color:
+      var(--text-secondary);
+  }
+
+  html.dark
+  #theme-toggle-mobile {
+    color:
+      #D8CBD0;
+  }
+
+
+  /* =======================================================
+     HERO MÓVIL
+     ======================================================= */
+
+  #hero {
+    width:
+      100% !important;
+
+    padding-top:
+      106px !important;
+
+    padding-left:
+      0 !important;
+
+    padding-right:
+      0 !important;
+
+    padding-bottom:
+      52px !important;
+  }
+
+
+  #hero
+  > div:not(.hero-gradient) {
+    width:
+      100% !important;
+
+    max-width:
+      none !important;
+
+    padding-left:
+      18px !important;
+
+    padding-right:
+      18px !important;
+  }
+
+
+  #hero .grid {
+    display:
+      flex !important;
+
+    flex-direction:
+      column !important;
+
+    width:
+      100% !important;
+
+    gap:
+      28px !important;
+  }
+
+
+  /* Texto primero */
+
+  #hero .order-1 {
+    order:
+      1 !important;
+
+    width:
+      100% !important;
+
+    text-align:
+      center !important;
+  }
+
+
+  /* Imagen después */
+
+  #hero .order-2 {
+    order:
+      2 !important;
+
+    width:
+      100% !important;
+
+    padding-top:
+      4px !important;
+  }
+
+
+  /* =======================================================
+     BADGE HERO
+     ======================================================= */
+
+  #hero .order-1 > span {
+    display:
+      inline-flex !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      center !important;
+
+    max-width:
+      100% !important;
+
+    padding:
+      8px 16px !important;
+
+    font-size:
+      11px !important;
+
+    line-height:
+      1.2 !important;
+
+    letter-spacing:
+      0.13em !important;
+
+    white-space:
+      nowrap !important;
+  }
+
+
+  /* =======================================================
+     H1 HERO
+     ======================================================= */
+
+  #hero h1 {
+    width:
+      100% !important;
+
+    max-width:
+      390px !important;
+
+    margin-top:
+      18px !important;
+
+    margin-left:
+      auto !important;
+
+    margin-right:
+      auto !important;
+
+    font-size:
+      45px !important;
+
+    line-height:
+      1.04 !important;
+
+    letter-spacing:
+      -0.025em !important;
+
+    text-align:
+      center !important;
+  }
+
+
+  /* =======================================================
+     PÁRRAFO HERO
+     ======================================================= */
+
+  #hero h1 + p {
+    width:
+      100% !important;
+
+    max-width:
+      370px !important;
+
+    margin-top:
+      20px !important;
+
+    margin-left:
+      auto !important;
+
+    margin-right:
+      auto !important;
+
+    padding-left:
+      4px !important;
+
+    padding-right:
+      4px !important;
+
+    font-size:
+      16px !important;
+
+    line-height:
+      1.55 !important;
+
+    text-align:
+      center !important;
+  }
+
+
+  /* =======================================================
+     CONTENEDOR BOTONES HERO
+     ======================================================= */
+
+  #hero
+  .order-1
+  > div:not(:last-child) {
+    width:
+      100% !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      center !important;
+  }
+
+
+  /* =======================================================
+     BOTONES HERO MÁS CORTOS
+     ======================================================= */
+
+  #hero .scroll-btn {
+    display:
+      inline-flex !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      center !important;
+
+    width:
+      280px !important;
+
+    max-width:
+      calc(100vw - 56px) !important;
+
+    min-height:
+      52px !important;
+
+    margin-left:
+      auto !important;
+
+    margin-right:
+      auto !important;
+
+    padding:
+      14px 24px !important;
+
+    border-radius:
+      var(--radius-full) !important;
+
+    font-size:
+      14px !important;
+
+    line-height:
+      1.2 !important;
+
+    white-space:
+      nowrap !important;
+  }
+
+
+  /* =======================================================
+     BENEFICIOS HERO
+     ======================================================= */
+
+  #hero .order-1 > div:last-child {
+    width:
+      100% !important;
+
+    display:
+      flex !important;
+
+    flex-direction:
+      row !important;
+
+    flex-wrap:
+      wrap !important;
+
+    align-items:
+      center !important;
+
+    justify-content:
+      center !important;
+
+    column-gap:
+      18px !important;
+
+    row-gap:
+      9px !important;
+
+    margin-top:
+      28px !important;
+  }
+
+  #hero
+  .order-1
+  > div:last-child
+  > span {
+    width:
+      auto !important;
+
+    font-size:
+      12px !important;
+
+    line-height:
+      1.4 !important;
+
+    white-space:
+      nowrap !important;
+  }
+
+  #hero
+  .order-1
+  > div:last-child
+  > span
+  > span {
+    font-size:
+      16px !important;
+  }
+
+  #hero
+  .order-1
+  > div:last-child
+  > .h-4 {
+    display:
+      none !important;
+  }
+
+
+  /* =======================================================
+     IMAGEN HERO
+     ======================================================= */
+
+  #hero
+  .order-2
+  > div:first-child {
+    width:
+      100% !important;
+
+    aspect-ratio:
+      4 / 5 !important;
+
+    border-radius:
+      var(--radius-lg) !important;
+  }
+
+
+  /* =======================================================
+     PREMIUM DIVIDER MÓVIL
+     ======================================================= */
+
+  .premium-divider {
+    padding-top:
+      4.5rem !important;
+
+    padding-bottom:
+      4.5rem !important;
+  }
+
+  .premium-divider::before {
+    top:
+      31px;
+
+    width:
+      36px;
+  }
+
+  .premium-divider
+  .font-cursive {
+    font-size:
+      1.3rem;
+  }
+
+  .premium-divider
+  p.font-serif {
+    font-size:
+      2rem;
+
+    line-height:
+      1.12;
+
+    padding-left:
+      0.5rem;
+
+    padding-right:
+      0.5rem;
+  }
+
+  .premium-divider
+  p:last-child {
+    font-size:
+      0.9rem;
+
+    line-height:
+      1.7;
+
+    padding-left:
+      0.5rem;
+
+    padding-right:
+      0.5rem;
+  }
+
+
+  /* =======================================================
+     MODAL MÓVIL
+     ======================================================= */
+
+  .modal-overlay {
+    padding:
+      1rem;
+  }
+
+  .modal-content {
+    width:
+      100%;
+
+    max-width:
+      95vw;
+
+    max-height:
+      82vh;
+  }
+
+  .modal-content img {
+    width:
+      100%;
+
+    max-width:
+      95vw;
+
+    max-height:
+      78vh;
+
+    object-fit:
+      contain;
+  }
+
+  .close-modal {
+    top:
+      -3.5rem;
+
+    width:
+      2.5rem;
+
+    height:
+      2.5rem;
+  }
+
+
+  /* =======================================================
+     FLOATS
+     ======================================================= */
+
+  .whatsapp-float {
+    right:
+      1rem;
+
+    bottom:
+      1.25rem;
+  }
+
+  .whatsapp-float > div {
+    width:
+      54px !important;
+
+    height:
+      54px !important;
+  }
+
+  #back-to-top {
+    left:
+      1rem;
+
+    bottom:
+      1.25rem;
+
+    width:
+      46px !important;
+
+    height:
+      46px !important;
+  }
+}
+
+
+/* =========================================================
+   43. MÓVILES PEQUEÑOS
+   ========================================================= */
+
+@media (max-width: 400px) {
+
+  #main-header > div {
+    padding-left:
+      16px !important;
+
+    padding-right:
+      16px !important;
+  }
+
+  .header-logo {
+    height:
+      68px !important;
+
+    max-width:
+      155px !important;
+
+    transform:
+      scale(1.07);
+  }
+
+  #mobile-menu {
+    left:
+      16px !important;
+
+    right:
+      16px !important;
+  }
+
+  #hero {
+    padding-top:
+      102px !important;
+  }
+
+  #hero h1 {
+    max-width:
+      345px !important;
+
+    font-size:
+      40px !important;
+  }
+
+  #hero h1 + p {
+    max-width:
+      340px !important;
+
+    font-size:
+      15px !important;
+  }
+
+  #hero .scroll-btn {
+    width:
+      265px !important;
+
+    max-width:
+      calc(100vw - 48px) !important;
+  }
+}
+
+
+/* =========================================================
+   44. DISPOSITIVOS TÁCTILES
+   ========================================================= */
+
+@media (hover: none) {
+
+  .card:hover,
+  .occasion-card:hover {
+    transform:
+      none;
+  }
+
+  .card:hover
+  .image-trigger img {
+    transform:
+      none;
+  }
+}
+
+
+/* =========================================================
+   45. REDUCIR MOVIMIENTO
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior:
+      auto;
+  }
+
+  body
+  *:not(#preloader):not(#preloader *) {
+    animation-duration:
+      0.01ms !important;
+
+    animation-iteration-count:
+      1 !important;
+
+    transition-duration:
+      0.01ms !important;
+
+    scroll-behavior:
+      auto !important;
+  }
+
+  .testimonial-track {
+    transition:
+      none !important;
+  }
+}
