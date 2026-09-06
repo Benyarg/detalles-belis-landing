@@ -101,6 +101,7 @@ detalles-belis/
 │   │   ├── favicon-32x32.png
 │   │   ├── favicon.ico
 │   │   ├── flores_eternas.png
+├   ├   ├── idea-regalo-personalizado.png
 │   │   ├── logo_detallesbelis.png
 │   │   ├── og-detalles-belis.jpg
 │   │   └── peluches_premium.png
