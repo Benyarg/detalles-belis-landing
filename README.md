@@ -1,73 +1,60 @@
-# 🎁 Detalles Belis — Landing Page Profesional
+# 🎁 Detalles Belis — Landing Page
 
-![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
-![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Responsive](https://img.shields.io/badge/Responsive-Design-22C55E?style=for-the-badge)
-![SEO](https://img.shields.io/badge/SEO-Optimized-4285F4?style=for-the-badge&logo=google&logoColor=white)
+<p align="center">
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" alt="HTML5" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" alt="CSS3" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Responsive_Design-22C55E?style=for-the-badge" alt="Responsive Design" />
+  <img src="https://img.shields.io/badge/SEO-Optimized-4285F4?style=for-the-badge&logo=google&logoColor=white" alt="SEO" />
+</p>
 
-> Landing page profesional desarrollada para **Detalles Belis**, un emprendimiento familiar dedicado a la creación y venta de regalos personalizados para momentos especiales.
+> Sitio web orientado a la presentación de productos y generación de pedidos para **Detalles Belis**, un emprendimiento familiar especializado en regalos personalizados.
 
----
-
-## 🌐 Sitio web
-
-**Producción:** [https://detallesbelis.com](https://detallesbelis.com)
-
----
-
-## 📖 Descripción
-
-**Detalles Belis** es una landing page desarrollada para fortalecer la presencia digital de un emprendimiento familiar especializado en regalos personalizados.
-
-El sitio fue diseñado con un enfoque en **experiencia de usuario, presentación visual de productos y conversión**, permitiendo que los visitantes conozcan el catálogo, exploren diferentes opciones de regalos y contacten directamente con el negocio para realizar pedidos personalizados.
-
-El proyecto incorpora diseño responsive, modo claro y oscuro, integración con WhatsApp, optimización SEO, recursos para redes sociales y una interfaz adaptada tanto a dispositivos móviles como a escritorio.
+<p align="center">
+  <a href="https://detallesbelis.com"><strong>🌐 Ver sitio en producción</strong></a>
+  ·
+  <a href="https://github.com/Benyarg/detalles-belis-landing"><strong>💻 Ver repositorio</strong></a>
+</p>
 
 ---
 
-## ✨ Características principales
+## 📌 Sobre el proyecto
 
-- 🎨 **Diseño moderno y responsive** — Adaptado para smartphones, tablets, laptops y pantallas de escritorio.
-- 🌙 **Modo claro y oscuro** — Cambio de tema con persistencia mediante `localStorage`.
-- 📱 **Optimización para dispositivos móviles** — Navegación, botones y contenido adaptados a diferentes resoluciones.
-- 📸 **Catálogo visual de productos** — Presentación atractiva de regalos personalizados.
-- 🔍 **Visualización ampliada de imágenes** — Modal interactivo para visualizar productos.
-- 💬 **Integración con WhatsApp** — Generación automática de solicitudes de pedido desde el formulario.
-- 📝 **Formulario de contacto** — Captura información relevante para solicitar una cotización.
-- 🎠 **Carrusel de testimonios** — Presentación dinámica de opiniones de clientes.
-- 📊 **Contadores animados** — Estadísticas visuales con animaciones.
-- ⬆️ **Botón Back to Top** — Navegación rápida hacia el inicio del sitio.
-- 🧭 **Navegación activa por secciones** — El menú identifica automáticamente la sección visible.
-- ⚡ **Preloader personalizado** — Pantalla de carga integrada con la identidad visual de la marca.
-- 🔎 **SEO técnico** — Metaetiquetas, canonical URL, `robots.txt`, `sitemap.xml` y datos estructurados.
-- 📲 **Open Graph y Twitter Cards** — Mejor presentación del sitio al compartirlo en redes sociales.
-- 🖼️ **Favicons multiplataforma** — Compatibilidad con navegadores, iOS y Android.
-- 🎨 **Browser Theme Color** — Sincronización del color superior del navegador con el modo claro y oscuro.
-- ♿ **Accesibilidad** — Uso de HTML semántico, atributos `aria`, textos alternativos y navegación organizada.
+**Detalles Belis** es una landing page desarrollada para fortalecer la presencia digital de un negocio de regalos personalizados. La experiencia se centra en presentar el catálogo de forma visual, comunicar la propuesta de valor de la marca y facilitar el contacto con clientes potenciales.
 
----
+El proyecto combina **diseño responsive, interactividad con JavaScript, optimización SEO y accesibilidad web** en una solución ligera, sin dependencias de instalación para su ejecución local. La interfaz contempla distintos tamaños de pantalla, desde smartphones compactos hasta monitores de escritorio.
 
-## 🛠️ Tecnologías utilizadas
+## ✨ Funcionalidades destacadas
 
-| Tecnología | Uso |
+- **Diseño responsive:** composición adaptable para smartphones, tablets, laptops y pantallas de hasta 1440 px.
+- **Tema claro y oscuro:** selector de apariencia con persistencia mediante `localStorage` y ajustes de contraste por sección.
+- **Catálogo visual:** tarjetas de productos con imágenes verticales y modal interactivo para ampliar su visualización.
+- **Contacto mediante WhatsApp:** formulario que construye un mensaje con los datos ingresados para agilizar las solicitudes personalizadas.
+- **Carrusel de testimonios:** presentación dinámica con controles y comportamiento adaptable.
+- **Microinteracciones:** contadores animados, efectos *Scroll Reveal* y navegación que identifica la sección activa.
+- **Preloader personalizado:** pantalla de carga alineada con la identidad visual del negocio.
+- **Accesibilidad:** estructura HTML semántica, atributos `aria`, textos alternativos y navegación organizada.
+- **SEO técnico:** metadatos, URL canónica, Open Graph, Twitter Cards, datos estructurados JSON-LD, `robots.txt` y `sitemap.xml`.
+- **Experiencia visual consistente:** sistema de espaciado y alineación compartido entre encabezado, contenido y pie de página.
+
+## 🧰 Stack tecnológico
+
+| Tecnología | Aplicación |
 | --- | --- |
-| **HTML5** | Estructura semántica del sitio |
-| **CSS3** | Estilos personalizados, responsive design y animaciones |
-| **JavaScript** | Interactividad, formularios, modal, carrusel y cambio de tema |
-| **Tailwind CSS** | Utilidades para diseño responsive y componentes visuales |
-| **Material Symbols** | Iconografía de la interfaz |
-| **Google Fonts** | Tipografías utilizadas en el diseño |
-| **Schema.org / JSON-LD** | Datos estructurados para motores de búsqueda |
-| **Git & GitHub** | Control de versiones y repositorio del proyecto |
-| **Netlify** | Despliegue del sitio web |
+| **HTML5** | Estructura semántica y organización del contenido. |
+| **CSS3** | Estilos personalizados, animaciones y ajustes responsive. |
+| **JavaScript** | Interactividad, formularios, modal, carrusel, cambio de tema y observación del viewport. |
+| **Tailwind CSS** | Utilidades de diseño, distribución y adaptación por breakpoints. |
+| **Material Symbols** | Iconografía de la interfaz. |
+| **Google Fonts** | Tipografías: Playfair Display, Poppins y Dancing Script. |
+| **Schema.org / JSON-LD** | Marcado de datos estructurados para buscadores. |
+| **Git & GitHub** | Control de versiones y gestión del código fuente. |
+| **Netlify** | Plataforma de despliegue. |
 
----
+## 🎁 Catálogo de productos
 
-## 🎁 Catálogo
-
-La landing page presenta diferentes categorías de productos personalizados, entre ellos:
+La página organiza la oferta comercial en categorías para facilitar el descubrimiento de productos:
 
 - 🌹 Flores eternas.
 - 🎁 Boxes personalizados.
@@ -76,20 +63,59 @@ La landing page presenta diferentes categorías de productos personalizados, ent
 - 🍫 Chocolates.
 - 📦 Cajas personalizadas.
 
-Cada sección está diseñada para destacar visualmente los productos y facilitar la interacción del usuario con el negocio.
+## 📱 Diseño adaptable
 
----
+La interfaz utiliza un enfoque *mobile-first* y ajustes específicos según el espacio disponible.
 
-## 🏗️ Estructura del proyecto
+| Dispositivo | Ancho de referencia | Adaptaciones |
+| --- | --- | --- |
+| Smartphones | 320–480 px | Menú compacto, contenido en una columna y tipografía ajustada. |
+| Tablets | 481–1024 px | Navegación adaptable y grillas de dos columnas. |
+| Laptops y desktop | 1025–1199 px | Navegación de escritorio y grillas de varias columnas. |
+| Pantallas grandes | 1200 px o más | Ancho de contenido controlado y márgenes amplios, hasta 1440 px. |
+
+## 🌗 Gestión de temas
+
+El usuario puede alternar entre dos esquemas visuales:
+
+| Tema | Color base |
+| --- | --- |
+| Claro | `#FFF9FA` |
+| Oscuro | `#171416` |
+
+La preferencia se conserva con `localStorage`. También se ajustan los colores de tarjetas, formularios, enlaces, estadísticas y elementos secundarios para mantener una jerarquía visual y un contraste legible.
+
+## 💬 Flujo de contacto
+
+El formulario prepara una solicitud y la deriva a WhatsApp mediante un enlace con el mensaje generado dinámicamente. Los datos contemplados son:
+
+- Nombre y correo electrónico.
+- Teléfono.
+- Tipo de regalo.
+- Mensaje adicional.
+- Fecha de solicitud.
+
+> El flujo facilita el contacto directo con el negocio; la coordinación y confirmación del pedido se realizan mediante WhatsApp.
+
+## 🔎 SEO y presencia digital
+
+La implementación contempla elementos técnicos para mejorar la interpretación y presentación del sitio en buscadores y plataformas sociales:
+
+- Metadatos descriptivos y `canonical URL`.
+- Open Graph y Twitter Cards para vistas previas al compartir enlaces.
+- Datos estructurados mediante Schema.org y JSON-LD.
+- Directivas de rastreo mediante `robots.txt`.
+- Mapa del sitio mediante `sitemap.xml`.
+- Favicons e iconos para distintos dispositivos.
+
+## 🗂️ Estructura del proyecto
 
 ```text
-detalles-belis/
-│
+detalles-belis-landing/
 ├── assets/
 │   ├── css/
 │   │   ├── preloader.css
 │   │   └── style.css
-│   │
 │   ├── img/
 │   │   ├── android-chrome-192x192.png
 │   │   ├── android-chrome-512x512.png
@@ -101,15 +127,13 @@ detalles-belis/
 │   │   ├── favicon-32x32.png
 │   │   ├── favicon.ico
 │   │   ├── flores_eternas.png
-├   ├   ├── idea-regalo-personalizado.png
+│   │   ├── idea-regalo-personalizado.png
 │   │   ├── logo_detallesbelis.png
 │   │   ├── og-detalles-belis.jpg
 │   │   └── peluches_premium.png
-│   │
 │   └── js/
 │       ├── main.js
 │       └── preloader.js
-│
 ├── .gitignore
 ├── index.html
 ├── README.md
@@ -118,288 +142,73 @@ detalles-belis/
 └── site.webmanifest
 ```
 
----
+## 🚀 Ejecución local
 
-## 🚀 Instalación local
+El proyecto es un sitio web estático y no requiere instalar dependencias para ejecutarse.
 
-El proyecto es un sitio web estático, por lo que no requiere instalar dependencias para ejecutarse.
+1. **Clonar el repositorio:**
 
-### 1. Clonar el repositorio
+   ```bash
+   git clone https://github.com/Benyarg/detalles-belis-landing.git
+   ```
 
-```bash
-git clone https://github.com/Benyarg/detalles-belis-landing.git
-```
+2. **Ingresar al directorio:**
 
-### 2. Ingresar al proyecto
+   ```bash
+   cd detalles-belis-landing
+   ```
 
-```bash
-cd detalles-belis
-```
+3. **Iniciar un servidor local** (opcional, recomendado):
 
-### 3. Ejecutar localmente
+   ```bash
+   npx serve .
+   ```
 
-Puedes abrir directamente:
+   Como alternativa, puedes utilizar Python:
 
-```text
-index.html
-```
+   ```bash
+   python -m http.server 8000
+   ```
 
-en tu navegador.
+   Después, abre en el navegador la dirección local indicada por el servidor. También puedes abrir `index.html` directamente.
 
-Sin embargo, para una experiencia más cercana al entorno de producción, se recomienda utilizar un servidor local.
+## 🎯 Objetivos y alcance
 
-### Usando Node.js
-
-```bash
-npx serve .
-```
-
-### Usando Python
-
-```bash
-python -m http.server 8000
-```
-
-Luego abre:
-
-```text
-http://localhost:8000
-```
-
----
-
-## 📱 Responsive Design
-
-La interfaz fue desarrollada utilizando un enfoque adaptable para distintos tamaños de pantalla.
-
-| Dispositivo | Resolución aproximada |
-| --- | --- |
-| 📱 Smartphones | 320px – 480px |
-| 📱 Tablets | 481px – 768px |
-| 💻 Laptops / Desktop | 769px – 1200px |
-| 🖥️ Pantallas grandes | 1200px+ |
-
-El diseño también incluye ajustes específicos para navegación móvil, botones, imágenes, formularios, hero section y menú responsive.
-
----
-
-## 🌙 Modo oscuro
-
-El sitio cuenta con soporte para **modo claro y oscuro**.
-
-La preferencia seleccionada por el usuario se almacena utilizando:
-
-```javascript
-localStorage
-```
-
-Esto permite mantener el tema seleccionado incluso después de recargar o volver a visitar el sitio.
-
-El color superior del navegador también se sincroniza dinámicamente con el tema utilizado.
-
-### Modo claro
-
-```text
-#FFF9FA
-```
-
-### Modo oscuro
-
-```text
-#171416
-```
-
----
-
-## 💬 Integración con WhatsApp
-
-El formulario de contacto genera automáticamente un mensaje con la información proporcionada por el usuario y lo envía hacia WhatsApp.
-
-Entre los datos incluidos se encuentran:
-
-- Nombre.
-- Correo electrónico.
-- Teléfono.
-- Tipo de regalo.
-- Mensaje adicional.
-- Fecha de solicitud.
-
-Esto permite agilizar la atención de clientes y reducir pasos durante el proceso de cotización.
-
----
-
-## 🔎 SEO
-
-El proyecto incorpora distintas técnicas de optimización para motores de búsqueda.
-
-### Metaetiquetas
-
-Incluye:
-
-- `title`
-- `description`
-- `keywords`
-- `author`
-- `robots`
-- `canonical`
-- `theme-color`
-
-### Open Graph
-
-Configuración para mejorar la visualización del sitio cuando se comparte en plataformas sociales.
-
-Incluye:
-
-- `og:title`
-- `og:description`
-- `og:type`
-- `og:url`
-- `og:image`
-- `og:site_name`
-- `og:locale`
-
-### Twitter Cards
-
-Incluye soporte para:
-
-```text
-summary_large_image
-```
-
-permitiendo mostrar una imagen destacada cuando el sitio se comparte en plataformas compatibles.
-
-### Datos estructurados
-
-Se implementó **JSON-LD utilizando Schema.org** para proporcionar información estructurada sobre la marca y facilitar la interpretación del sitio por parte de los motores de búsqueda.
-
----
-
-## 🤖 Robots y Sitemap
-
-El proyecto incluye:
-
-```text
-robots.txt
-```
-
-para indicar a los motores de búsqueda qué contenido puede ser rastreado.
-
-También incluye:
-
-```text
-sitemap.xml
-```
-
-para facilitar la indexación del sitio web.
-
----
-
-## 📲 Web App Manifest
-
-Se incluye:
-
-```text
-site.webmanifest
-```
-
-con información sobre:
-
-- Nombre de la aplicación.
-- Nombre corto.
-- Color del tema.
-- Color de fondo.
-- Iconos para Android.
-- Configuración de visualización.
-
-Esto mejora la integración del sitio con navegadores y dispositivos móviles.
-
----
-
-## 🎯 Objetivos del proyecto
-
-El objetivo principal del proyecto fue proporcionar a **Detalles Belis** una presencia digital profesional que permitiera:
-
-1. Exhibir sus productos de forma atractiva.
-2. Facilitar la solicitud de pedidos personalizados.
-3. Centralizar la información del negocio.
-4. Mejorar la experiencia del cliente.
-5. Ampliar el alcance comercial de la marca.
-6. Generar confianza mediante una presencia digital profesional.
-7. Facilitar el contacto directo mediante WhatsApp.
-8. Mejorar la visibilidad del negocio en motores de búsqueda.
-
----
-
-## 📈 Resultados
-
-- ✅ Landing page desplegada en producción.
-- ✅ Dominio propio.
-- ✅ Diseño completamente responsive.
-- ✅ Catálogo digital de productos.
-- ✅ Integración con WhatsApp.
-- ✅ Formulario para solicitudes personalizadas.
-- ✅ Modo claro y oscuro.
-- ✅ Optimización para dispositivos móviles.
-- ✅ Favicons multiplataforma.
-- ✅ Open Graph para redes sociales.
-- ✅ Sitemap y robots configurados.
-- ✅ SEO técnico implementado.
-- ✅ Identidad visual integrada.
-- ✅ Experiencia de navegación optimizada.
-
----
+- Presentar el catálogo de productos de manera clara y atractiva.
+- Facilitar las consultas y solicitudes de regalos personalizados.
+- Reforzar la identidad digital y la confianza en el negocio.
+- Mantener una experiencia consistente en distintos dispositivos.
+- Aplicar buenas prácticas de frontend, accesibilidad y SEO técnico.
 
 ## 🔄 Control de versiones
 
-El proyecto utiliza **Git** para el control de versiones y **GitHub** como repositorio remoto.
+El proyecto utiliza Git para el seguimiento de cambios y GitHub como repositorio remoto. Se mantiene una convención de commits basada en prefijos descriptivos:
 
-Ejemplo del flujo de trabajo utilizado:
+| Prefijo | Uso |
+| --- | --- |
+| `feat:` | Nueva funcionalidad. |
+| `fix:` | Corrección de errores. |
+| `refactor:` | Mejora interna del código sin alterar su comportamiento esperado. |
+| `style:` | Cambios de formato o presentación. |
+| `docs:` | Actualización de documentación. |
+| `chore:` | Tareas de mantenimiento. |
+
+Ejemplo de flujo:
 
 ```bash
 git add .
-git commit -m "feat: implement new feature"
+git commit -m "docs: improve project README"
 git push origin main
 ```
 
-Se utiliza una convención de commits basada en prefijos descriptivos como:
-
-```text
-feat:
-fix:
-refactor:
-style:
-docs:
-chore:
-```
-
-Esto permite mantener un historial de cambios más organizado y comprensible.
-
----
-
 ## 👨‍💻 Autor
 
-**Benjamin Rumay**  
-Software Developer
+**Benjamin Rumay** · Software Developer
 
 [![GitHub](https://img.shields.io/badge/GitHub-Benyarg-181717?style=for-the-badge&logo=github)](https://github.com/Benyarg)
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Jhoel_Benjamin_Rumay_García-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/jhoel-benjamin-rumay-garc%C3%ADa-48711a191/)
-
 ---
 
-## ⭐ Proyecto de portafolio
-
-Este proyecto forma parte de mi portafolio como **Software Developer** y representa la aplicación práctica de conceptos relacionados con:
-
-- Desarrollo frontend.
-- Responsive Web Design.
-- UI/UX.
-- JavaScript.
-- SEO técnico.
-- Accesibilidad web.
-- Integración con servicios externos.
-- Optimización para dispositivos móviles.
-- Git y control de versiones.
-- Despliegue web.
-
----
+<p align="center">
+  Desarrollado con enfoque en <strong>experiencia de usuario, diseño adaptable y soluciones web orientadas a negocio.</strong>
+</p>
