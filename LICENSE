@@ -1,24 +1,21 @@
-ALL RIGHTS RESERVED
+MIT License
 
-Copyright © 2026 Benjamin Rumay.
-Código fuente, estructura e implementación técnica.
+Copyright (c) 2026 Benjamin Rumay
 
-Este proyecto fue desarrollado para un negocio real y se encuentra publicado
-con fines de portafolio profesional, demostración técnica y presentación de
-capacidades de desarrollo web.
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-El código fuente, diseño, estructura e implementación técnica de este proyecto
-no se conceden bajo una licencia de código abierto.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-Salvo autorización expresa y por escrito, no se concede permiso para copiar,
-modificar, redistribuir, sublicenciar, publicar, comercializar ni utilizar el
-código fuente o el proyecto completo con fines comerciales.
-
-Los logotipos, imágenes, contenido visual, textos comerciales y demás elementos
-asociados a la identidad de Detalles Belis pertenecen a sus respectivos
-propietarios y no forman parte de ninguna autorización de reutilización.
-
-La publicación de este repositorio no implica la concesión de derechos
-comerciales sobre el código, la marca ni los recursos visuales incluidos.
-
-Todos los derechos no expresamente concedidos quedan reservados.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
